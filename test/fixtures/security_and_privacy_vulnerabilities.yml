@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  product_id: 1
+  cve_id: MyString
+  severity: MyString
+  description: MyText
+  advisories: MyText
+
+two:
+  product_id: 1
+  cve_id: MyString
+  severity: MyString
+  description: MyText
+  advisories: MyText

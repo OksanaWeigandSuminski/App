@@ -1,0 +1,1 @@
+json.array! @security_and_privacy_vulnerabilities, partial: "security_and_privacy_vulnerabilities/security_and_privacy_vulnerability", as: :security_and_privacy_vulnerability

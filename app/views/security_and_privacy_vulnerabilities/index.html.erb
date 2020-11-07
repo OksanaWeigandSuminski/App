@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Security And Privacy Vulnerabilities</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Product</th>
+      <th>Cve</th>
+      <th>Severity</th>
+      <th>Description</th>
+      <th>Advisories</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @security_and_privacy_vulnerabilities.each do |security_and_privacy_vulnerability| %>
+      <tr>
+        <td><%= security_and_privacy_vulnerability.product_id %></td>
+        <td><%= security_and_privacy_vulnerability.cve_id %></td>
+        <td><%= security_and_privacy_vulnerability.severity %></td>
+        <td><%= security_and_privacy_vulnerability.description %></td>
+        <td><%= security_and_privacy_vulnerability.advisories %></td>
+        <td><%= link_to 'Show', security_and_privacy_vulnerability %></td>
+        <td><%= link_to 'Edit', edit_security_and_privacy_vulnerability_path(security_and_privacy_vulnerability) %></td>
+        <td><%= link_to 'Destroy', security_and_privacy_vulnerability, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Security And Privacy Vulnerability', new_security_and_privacy_vulnerability_path %>

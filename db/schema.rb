@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_07_085120) do
+ActiveRecord::Schema.define(version: 2020_11_07_092031) do
 
   create_table "manufacturers", force: :cascade do |t|
     t.string "name"
@@ -29,6 +29,16 @@ ActiveRecord::Schema.define(version: 2020_11_07_085120) do
     t.string "name"
     t.integer "barcode"
     t.integer "manufacturer_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "security_and_privacy_vulnerabilities", force: :cascade do |t|
+    t.integer "product_id"
+    t.string "cve_id"
+    t.string "severity"
+    t.text "description"
+    t.text "advisories"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

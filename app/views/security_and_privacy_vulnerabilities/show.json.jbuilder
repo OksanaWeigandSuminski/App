@@ -1,0 +1,1 @@
+json.partial! "security_and_privacy_vulnerabilities/security_and_privacy_vulnerability", security_and_privacy_vulnerability: @security_and_privacy_vulnerability

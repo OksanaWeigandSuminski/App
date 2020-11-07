@@ -586,3 +586,75 @@ Processing by ProductsController#index as HTML
 Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.1ms)
 
 
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateSecurityAndPrivacyVulnerabilities (20201107092031)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20201107092031_create_security_and_privacy_vulnerabilities.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "security_and_privacy_vulnerabilities" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "product_id" integer, "cve_id" varchar, "severity" varchar, "description" text, "advisories" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20201107092031_create_security_and_privacy_vulnerabilities.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201107092031"]]
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/security_and_privacy_vulnerabilities/" for ::1 at 2020-11-07 04:22:52 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by SecurityAndPrivacyVulnerabilitiesController#index as HTML
+  Rendering security_and_privacy_vulnerabilities/index.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.5ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities"[0m
+  ↳ app/views/security_and_privacy_vulnerabilities/index.html.erb:18
+  Rendered security_and_privacy_vulnerabilities/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 285ms (Views: 275.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities/new" for ::1 at 2020-11-07 04:23:20 -0500
+Processing by SecurityAndPrivacyVulnerabilitiesController#new as HTML
+  Rendering security_and_privacy_vulnerabilities/new.html.erb within layouts/application
+  Rendered security_and_privacy_vulnerabilities/_form.html.erb (24.2ms)
+  Rendered security_and_privacy_vulnerabilities/new.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 55ms (Views: 45.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/security_and_privacy_vulnerabilities" for ::1 at 2020-11-07 04:29:17 -0500
+Processing by SecurityAndPrivacyVulnerabilitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UhRQ+HRScJ7lz9kpVo8Im0pAWGE/ivjWiqvIB6Sc5cTG1WFhCuLTD9mVDS9lBgAbtsV0fDQPGgfwEzOvj+go3Q==", "security_and_privacy_vulnerability"=>{"product_id"=>"1", "cve_id"=>"CVE-2015-3429", "severity"=>"High", "description"=>"Cross-site scripting (XSS) vulnerability in example.html in Genericons before 3.3.1, as used in WordPress before 4.2.2, allows remote attackers to inject arbitrary web script or HTML via a fragment identifier.\r\n", "advisories"=>"Vulnerability is valid if product versions listed below are used TOGETHER WITH(AND)\r\nAutomattic Genericons 3.3,\r\nWordpress Wordpress 4.2.1"}, "commit"=>"Create Security and privacy vulnerability"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/security_and_privacy_vulnerabilities_controller.rb:30
+  [1m[36mSecurityAndPrivacyVulnerability Create (1.3ms)[0m  [1m[32mINSERT INTO "security_and_privacy_vulnerabilities" ("product_id", "cve_id", "severity", "description", "advisories", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["product_id", 1], ["cve_id", "CVE-2015-3429"], ["severity", "High"], ["description", "Cross-site scripting (XSS) vulnerability in example.html in Genericons before 3.3.1, as used in WordPress before 4.2.2, allows remote attackers to inject arbitrary web script or HTML via a fragment identifier.\r\n"], ["advisories", "Vulnerability is valid if product versions listed below are used TOGETHER WITH(AND)\r\nAutomattic Genericons 3.3,\r\nWordpress Wordpress 4.2.1"], ["created_at", "2020-11-07 09:29:17.457313"], ["updated_at", "2020-11-07 09:29:17.457313"]]
+  ↳ app/controllers/security_and_privacy_vulnerabilities_controller.rb:30
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/security_and_privacy_vulnerabilities_controller.rb:30
+Redirected to http://localhost:3000/security_and_privacy_vulnerabilities/1
+Completed 302 Found in 10ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities/1" for ::1 at 2020-11-07 04:29:17 -0500
+Processing by SecurityAndPrivacyVulnerabilitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.2ms)[0m  [1m[34mSELECT  "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities" WHERE "security_and_privacy_vulnerabilities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/security_and_privacy_vulnerabilities_controller.rb:67
+  Rendering security_and_privacy_vulnerabilities/show.html.erb within layouts/application
+  Rendered security_and_privacy_vulnerabilities/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 42ms (Views: 36.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities" for ::1 at 2020-11-07 04:29:24 -0500
+Processing by SecurityAndPrivacyVulnerabilitiesController#index as HTML
+  Rendering security_and_privacy_vulnerabilities/index.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.2ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities"[0m
+  ↳ app/views/security_and_privacy_vulnerabilities/index.html.erb:18
+  Rendered security_and_privacy_vulnerabilities/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 81ms (Views: 79.3ms | ActiveRecord: 0.2ms)
+
+
