@@ -1,0 +1,56 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @manufacturer.name %>
+</p>
+
+<p>
+  <strong>Street address:</strong>
+  <%= @manufacturer.street_address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @manufacturer.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @manufacturer.state %>
+</p>
+
+<p>
+  <strong>Postal code:</strong>
+  <%= @manufacturer.postal_code %>
+</p>
+
+<p>
+  <strong>Country or region:</strong>
+  <%= @manufacturer.country_or_region %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @manufacturer.phone %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @manufacturer.email %>
+</p>
+<% @manufacturer.products.each do |product| %>
+  <tr>
+    <td><%= product.name %></td>
+    <td><%= product.barcode %></td>
+    <td><%= product.manufacturer_id %></td>
+    <br><br>
+    <td><%= link_to 'Show', product %></td>
+    <td><%= link_to 'Edit', edit_product_path(product) %></td>
+    <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+  <br><br>
+<% end %>
+
+<%= link_to 'Edit', edit_manufacturer_path(@manufacturer) %> |
+<%= link_to 'Back', manufacturers_path %>

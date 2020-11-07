@@ -1,0 +1,588 @@
+Started GET "/" for ::1 at 2020-11-07 03:33:43 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb (4.3ms)
+Completed 200 OK in 18ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2020-11-07 03:36:28 -0500
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.4.4) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.4.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.4) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.4) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.4) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.4) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateProducts (20201107083603)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "products" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "barcode" integer, "manufacturer_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20201107083603_create_products.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201107083603"]]
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-11-07 08:40:51.844981"], ["updated_at", "2020-11-07 08:40:51.844981"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/products" for ::1 at 2020-11-07 03:41:06 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 662ms (Views: 651.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/new" for ::1 at 2020-11-07 03:41:21 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (30.8ms)
+  Rendered products/new.html.erb within layouts/application (33.5ms)
+Completed 200 OK in 68ms (Views: 50.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/products" for ::1 at 2020-11-07 03:41:23 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/new" for ::1 at 2020-11-07 03:41:43 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (3.1ms)
+  Rendered products/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 31ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for ::1 at 2020-11-07 03:41:55 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TEicNDUoA5b28hoLtHAg+CYkBCSuH+uppslqeFIXfuc74TM7gbdcj0nwr74eIxQnjKZME0srhponRk0U4JMMEQ==", "product"=>{"name"=>"Zumi", "barcode"=>"1265348954", "manufacturer_id"=>"1"}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:30
+  [1m[36mProduct Create (1.1ms)[0m  [1m[32mINSERT INTO "products" ("name", "barcode", "manufacturer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Zumi"], ["barcode", 1265348954], ["manufacturer_id", 1], ["created_at", "2020-11-07 08:41:55.540746"], ["updated_at", "2020-11-07 08:41:55.540746"]]
+  ↳ app/controllers/products_controller.rb:30
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/products_controller.rb:30
+Redirected to http://localhost:3000/products/1
+Completed 302 Found in 8ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/products/1" for ::1 at 2020-11-07 03:41:55 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:67
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 23ms (Views: 17.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for ::1 at 2020-11-07 03:41:58 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 27ms (Views: 25.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for ::1 at 2020-11-07 03:44:16 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 243ms (Views: 230.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/products/new" for ::1 at 2020-11-07 03:44:17 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (16.3ms)
+  Rendered products/new.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 41ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for ::1 at 2020-11-07 03:44:25 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OBNGPyu+rmWg2K/NfzZpvMNpXQHGJce7fiWh1hKXV8NPuukwnyHxfB/aGnjVZV1jaesVNiMRqoj/qoa6oBMlNQ==", "product"=>{"name"=>"Watson", "barcode"=>"456", "manufacturer_id"=>"2"}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:30
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."name" = ? LIMIT ?[0m  [["name", "Watson"], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:30
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/products_controller.rb:30
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.4ms)
+
+
+  
+NameError (uninitialized constant Product::Manufacturer):
+  
+app/controllers/products_controller.rb:30:in `block in create'
+app/controllers/products_controller.rb:29:in `create'
+Started GET "/products/new" for ::1 at 2020-11-07 03:45:30 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (2.3ms)
+  Rendered products/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 29ms (Views: 18.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/products" for ::1 at 2020-11-07 03:45:38 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qHHxeDa/Q8NZw/LrBQZkSYD0urJp3bQNkedBunRI8mHCvLjAvMd+Zk7tZcUY8u3R1KXj8UW2Vh3b4KejVjtvXA==", "product"=>{"name"=>"Watson", "barcode"=>"667", "manufacturer_id"=>"2"}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:30
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."name" = ? LIMIT ?[0m  [["name", "Watson"], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:30
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/products_controller.rb:30
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (2.9ms)
+  Rendered products/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 26ms (Views: 21.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/products" for ::1 at 2020-11-07 03:45:49 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"euRUDbVtgBqXljBMhiYMO1gyVBUGEYsZcrwXgHAWcnsQKR21PxW9v4C4p2Kb0oWjDGMNVip6aQk4u/GZUmXvRg==", "product"=>{"name"=>"Watson", "barcode"=>"6672765983", "manufacturer_id"=>"2"}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:30
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."name" = ? LIMIT ?[0m  [["name", "Watson"], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:30
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "barcode", "manufacturer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Watson"], ["barcode", 6672765983], ["manufacturer_id", 2], ["created_at", "2020-11-07 08:45:49.158179"], ["updated_at", "2020-11-07 08:45:49.158179"]]
+  ↳ app/controllers/products_controller.rb:30
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/products_controller.rb:30
+Redirected to http://localhost:3000/products/2
+Completed 302 Found in 11ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/products/2" for ::1 at 2020-11-07 03:45:49 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:67
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for ::1 at 2020-11-07 03:45:51 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateManufacturers (20201107085120)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20201107085120_create_manufacturers.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "manufacturers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "street_address" varchar, "city" varchar, "state" varchar, "postal_code" integer, "country_or_region" varchar, "phone" integer, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20201107085120_create_manufacturers.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20201107085120"]]
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/manufacturers" for ::1 at 2020-11-07 03:53:21 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.5ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:21
+  Rendered manufacturers/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 295ms (Views: 286.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/manufacturers/new" for ::1 at 2020-11-07 03:53:24 -0500
+Processing by ManufacturersController#new as HTML
+  Rendering manufacturers/new.html.erb within layouts/application
+  Rendered manufacturers/_form.html.erb (28.1ms)
+  Rendered manufacturers/new.html.erb within layouts/application (30.1ms)
+Completed 200 OK in 64ms (Views: 52.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/manufacturers" for ::1 at 2020-11-07 03:54:25 -0500
+Processing by ManufacturersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IU5zWi5+0E+aDsaUv0em6y6KpVGPd2wVL7I7pfLBZDYFnpUwKW5VNVyj94k5lnr4JgkUghCFHQMRE6MbmbAzvw==", "manufacturer"=>{"name"=>"RoboLonk", "street_address"=>"77 Caroll str.", "city"=>"New York", "state"=>"NY", "postal_code"=>"45684", "country_or_region"=>"", "phone"=>"", "email"=>"robolink@gmail.com"}, "commit"=>"Create Manufacturer"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:30
+  [1m[36mManufacturer Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "manufacturers" WHERE "manufacturers"."name" = ? LIMIT ?[0m  [["name", "RoboLonk"], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:30
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:30
+  Rendering manufacturers/new.html.erb within layouts/application
+  Rendered manufacturers/_form.html.erb (4.5ms)
+  Rendered manufacturers/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 48ms (Views: 23.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/manufacturers" for ::1 at 2020-11-07 03:54:45 -0500
+Processing by ManufacturersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q6DX+3IuSs1tydHfqE5UHkGDBYbrZP3o1EndXUa7IWbBbZ5D+FZ3aHrnRvG1ut2GFdJcxccPH/ieTjtEZMi8Ww==", "manufacturer"=>{"name"=>"RoboLonk", "street_address"=>"77 Caroll str.", "city"=>"New York", "state"=>"NY", "postal_code"=>"45684", "country_or_region"=>"US", "phone"=>"1276453890", "email"=>"robolink@gmail.com"}, "commit"=>"Create Manufacturer"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:30
+  [1m[36mManufacturer Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "manufacturers" WHERE "manufacturers"."name" = ? LIMIT ?[0m  [["name", "RoboLonk"], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:30
+  [1m[36mManufacturer Create (0.7ms)[0m  [1m[32mINSERT INTO "manufacturers" ("name", "street_address", "city", "state", "postal_code", "country_or_region", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "RoboLonk"], ["street_address", "77 Caroll str."], ["city", "New York"], ["state", "NY"], ["postal_code", 45684], ["country_or_region", "US"], ["phone", 1276453890], ["email", "robolink@gmail.com"], ["created_at", "2020-11-07 08:54:45.142016"], ["updated_at", "2020-11-07 08:54:45.142016"]]
+  ↳ app/controllers/manufacturers_controller.rb:30
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:30
+Redirected to http://localhost:3000/manufacturers/1
+Completed 302 Found in 13ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/manufacturers/1" for ::1 at 2020-11-07 03:54:45 -0500
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mManufacturer Load (0.3ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67
+  Rendering manufacturers/show.html.erb within layouts/application
+  Rendered manufacturers/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 24ms (Views: 19.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/manufacturers" for ::1 at 2020-11-07 03:54:46 -0500
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.3ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:21
+  Rendered manufacturers/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/manufacturers/new" for ::1 at 2020-11-07 03:54:49 -0500
+Processing by ManufacturersController#new as HTML
+  Rendering manufacturers/new.html.erb within layouts/application
+  Rendered manufacturers/_form.html.erb (36.3ms)
+  Rendered manufacturers/new.html.erb within layouts/application (37.5ms)
+Completed 200 OK in 59ms (Views: 57.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/manufacturers" for ::1 at 2020-11-07 03:54:55 -0500
+Processing by ManufacturersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qVE/33YVRp6u11EZEapjqyBWK6vhIWdwAllwjCBh/1aNgdm1cQXD5Gh6YASXe7+4KNWaeH7TFmY8+OgySxCo3w==", "manufacturer"=>{"name"=>"Tivoli Audio", "street_address"=>"Flatbush Ave", "city"=>"New York", "state"=>"NY", "postal_code"=>"22333", "country_or_region"=>"United States", "phone"=>"1234567889", "email"=>"tivoli@gmail.com"}, "commit"=>"Create Manufacturer"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:30
+  [1m[36mManufacturer Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "manufacturers" WHERE "manufacturers"."name" = ? LIMIT ?[0m  [["name", "Tivoli Audio"], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:30
+  [1m[36mManufacturer Create (0.4ms)[0m  [1m[32mINSERT INTO "manufacturers" ("name", "street_address", "city", "state", "postal_code", "country_or_region", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Tivoli Audio"], ["street_address", "Flatbush Ave"], ["city", "New York"], ["state", "NY"], ["postal_code", 22333], ["country_or_region", "United States"], ["phone", 1234567889], ["email", "tivoli@gmail.com"], ["created_at", "2020-11-07 08:54:55.582989"], ["updated_at", "2020-11-07 08:54:55.582989"]]
+  ↳ app/controllers/manufacturers_controller.rb:30
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:30
+Redirected to http://localhost:3000/manufacturers/2
+Completed 302 Found in 12ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/manufacturers/2" for ::1 at 2020-11-07 03:54:55 -0500
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67
+  Rendering manufacturers/show.html.erb within layouts/application
+  Rendered manufacturers/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/manufacturers" for ::1 at 2020-11-07 03:54:56 -0500
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:21
+  Rendered manufacturers/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/manufacturers/new" for ::1 at 2020-11-07 03:54:58 -0500
+Processing by ManufacturersController#new as HTML
+  Rendering manufacturers/new.html.erb within layouts/application
+  Rendered manufacturers/_form.html.erb (4.6ms)
+  Rendered manufacturers/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/manufacturers" for ::1 at 2020-11-07 03:55:02 -0500
+Processing by ManufacturersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KkFtYdZ3RFSyU9IEX1jav20xkLki04ynsIDNhI4e0cYOkYsL0WfBLnT+4xnZiQasZbIhar0h/bGOIVU65W+GTw==", "manufacturer"=>{"name"=>"IBM", "street_address"=>"123 Sterling Pl.", "city"=>"New York", "state"=>"NY", "postal_code"=>"22333", "country_or_region"=>"United States", "phone"=>"1234567889", "email"=>"tivoli@gmail.com"}, "commit"=>"Create Manufacturer"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:30
+  [1m[36mManufacturer Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "manufacturers" WHERE "manufacturers"."name" = ? LIMIT ?[0m  [["name", "IBM"], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:30
+  [1m[36mManufacturer Create (0.3ms)[0m  [1m[32mINSERT INTO "manufacturers" ("name", "street_address", "city", "state", "postal_code", "country_or_region", "phone", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "IBM"], ["street_address", "123 Sterling Pl."], ["city", "New York"], ["state", "NY"], ["postal_code", 22333], ["country_or_region", "United States"], ["phone", 1234567889], ["email", "tivoli@gmail.com"], ["created_at", "2020-11-07 08:55:02.455260"], ["updated_at", "2020-11-07 08:55:02.455260"]]
+  ↳ app/controllers/manufacturers_controller.rb:30
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:30
+Redirected to http://localhost:3000/manufacturers/3
+Completed 302 Found in 10ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/manufacturers/3" for ::1 at 2020-11-07 03:55:02 -0500
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67
+  Rendering manufacturers/show.html.erb within layouts/application
+  Rendered manufacturers/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/manufacturers/3/edit" for ::1 at 2020-11-07 03:55:05 -0500
+Processing by ManufacturersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67
+  Rendering manufacturers/edit.html.erb within layouts/application
+  Rendered manufacturers/_form.html.erb (5.6ms)
+  Rendered manufacturers/edit.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 38ms (Views: 30.1ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/manufacturers/3" for ::1 at 2020-11-07 03:55:11 -0500
+Processing by ManufacturersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/jBiSOar0cMg6unNCpdoXByEtfwqFku7VHSFvPdewYCi3vBnla9vow28dQhdj3+ZvHjKA2YxSps75FAayiNmIw==", "manufacturer"=>{"name"=>"IBM", "street_address"=>"123 Sterling Pl.", "city"=>"New York", "state"=>"NY", "postal_code"=>"22333", "country_or_region"=>"United States", "phone"=>"1234567889", "email"=>"ibm@gmail.com"}, "commit"=>"Update Manufacturer", "id"=>"3"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:44
+  [1m[36mManufacturer Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "manufacturers" WHERE "manufacturers"."name" = ? AND "manufacturers"."id" != ? LIMIT ?[0m  [["name", "IBM"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:44
+  [1m[36mManufacturer Update (0.4ms)[0m  [1m[33mUPDATE "manufacturers" SET "email" = ?, "updated_at" = ? WHERE "manufacturers"."id" = ?[0m  [["email", "ibm@gmail.com"], ["updated_at", "2020-11-07 08:55:11.209398"], ["id", 3]]
+  ↳ app/controllers/manufacturers_controller.rb:44
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:44
+Redirected to http://localhost:3000/manufacturers/3
+Completed 302 Found in 10ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/manufacturers/3" for ::1 at 2020-11-07 03:55:11 -0500
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67
+  Rendering manufacturers/show.html.erb within layouts/application
+  Rendered manufacturers/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/manufacturers" for ::1 at 2020-11-07 03:55:15 -0500
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:21
+  Rendered manufacturers/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/manufacturers" for ::1 at 2020-11-07 03:59:26 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:21
+  Rendered manufacturers/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 245ms (Views: 234.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/products" for ::1 at 2020-11-07 03:59:28 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 44ms (Views: 35.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/manufacturers" for ::1 at 2020-11-07 03:59:31 -0500
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:21
+  Rendered manufacturers/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/manufacturers/1" for ::1 at 2020-11-07 03:59:34 -0500
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."manufacturer_id" = ?[0m  [["manufacturer_id", 1]]
+  ↳ app/views/manufacturers/show.html.erb:42
+  Rendered manufacturers/show.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 53ms (Views: 47.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/manufacturers" for ::1 at 2020-11-07 03:59:38 -0500
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:21
+  Rendered manufacturers/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for ::1 at 2020-11-07 03:59:40 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/1" for ::1 at 2020-11-07 03:59:41 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:67
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 53ms (Views: 50.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for ::1 at 2020-11-07 03:59:43 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/new" for ::1 at 2020-11-07 03:59:46 -0500
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (19.4ms)
+  Rendered products/new.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for ::1 at 2020-11-07 03:59:58 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z6NjrbAusWXCgaEY+bcMTzg13eQa7dVVjRmF2REM9w8QCsyiBLHufH2DFK1T5DiQkreV0//ZuGYMlqK1o4iF+Q==", "product"=>{"name"=>"PAL bt", "barcode"=>"234", "manufacturer_id"=>"6"}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:30
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."name" = ? LIMIT ?[0m  [["name", "PAL bt"], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:30
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:30
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/products_controller.rb:30
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (2.9ms)
+  Rendered products/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 28ms (Views: 21.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/products" for ::1 at 2020-11-07 04:00:17 -0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QDKPqdRkbfAWdfKLKyPJPvSumuqcU+ZjOyxBLAYxw+Qq/8YRXhxQVQFbZaU210CmoP/DqbA4BHNxK6c1JEJe2Q==", "product"=>{"name"=>"PAL bt", "barcode"=>"2345674890", "manufacturer_id"=>"3"}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:30
+  [1m[36mProduct Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."name" = ? LIMIT ?[0m  [["name", "PAL bt"], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:30
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:30
+  [1m[36mProduct Create (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "barcode", "manufacturer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "PAL bt"], ["barcode", 2345674890], ["manufacturer_id", 3], ["created_at", "2020-11-07 09:00:17.753795"], ["updated_at", "2020-11-07 09:00:17.753795"]]
+  ↳ app/controllers/products_controller.rb:30
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/products_controller.rb:30
+Redirected to http://localhost:3000/products/3
+Completed 302 Found in 12ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/products/3" for ::1 at 2020-11-07 04:00:17 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:67
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 27ms (Views: 24.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for ::1 at 2020-11-07 04:00:19 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.1ms)
+
+
