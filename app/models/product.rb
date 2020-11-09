@@ -6,4 +6,5 @@ class Product < ApplicationRecord
     validates :manufacturer_id,  presence: true
     validates :manufacturer_id, numericality: { only_integer: true }
     belongs_to :manufacturer
+    has_many :security_and_privacy_vulnerabilities, dependent: :destroy
 end
