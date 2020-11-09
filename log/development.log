@@ -1828,3 +1828,537 @@ Processing by ManufacturersController#index as HTML
 Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.1ms)
 
 
+Started GET "/manufacturers" for ::1 at 2020-11-08 22:33:09 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.5ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:21
+  Rendered manufacturers/index.html.erb within layouts/application (14.4ms)
+Completed 500 Internal Server Error in 388ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: font-awesome.
+        on line 20:2 of app/assets/stylesheets/application.css.scss
+>>  @import "font-awesome";
+
+   -^
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.css.scss:20
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__2201796612146022948_70295217783660'
+Started GET "/products" for ::1 at 2020-11-08 22:33:44 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (9.8ms)
+Completed 500 Internal Server Error in 122ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: font-awesome.
+        on line 20:2 of app/assets/stylesheets/application.css.scss
+>>  @import "font-awesome";
+
+   -^
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.css.scss:20
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__2201796612146022948_70295181556180'
+Started GET "/products" for ::1 at 2020-11-08 22:44:05 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 2455ms (Views: 2452.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/new" for ::1 at 2020-11-08 22:44:13 -0500
+Processing by ProductsController#new as HTML
+Filter chain halted as #<Proc:0x00007fddc2f60a98@/Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/actionpack-5.2.4.4/lib/action_controller/metal/http_authentication.rb:72> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2020-11-08 22:44:17 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 53ms (Views: 51.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities" for ::1 at 2020-11-08 22:47:05 -0500
+Processing by SecurityAndPrivacyVulnerabilitiesController#index as HTML
+  Rendering security_and_privacy_vulnerabilities/index.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.5ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities"[0m
+  ↳ app/views/security_and_privacy_vulnerabilities/index.html.erb:18
+  Rendered security_and_privacy_vulnerabilities/index.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 105ms (Views: 98.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/products" for ::1 at 2020-11-08 22:47:15 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/1" for ::1 at 2020-11-08 22:47:17 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:67
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 36ms (Views: 26.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for ::1 at 2020-11-08 22:47:23 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/1" for ::1 at 2020-11-08 22:48:09 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:67
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 46ms (Views: 43.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/1" for ::1 at 2020-11-08 22:54:11 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:67
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 55ms (Views: 39.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products" for ::1 at 2020-11-08 22:54:13 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 49ms (Views: 41.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/1" for ::1 at 2020-11-08 22:54:20 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:67
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for ::1 at 2020-11-08 22:54:23 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities" for ::1 at 2020-11-08 22:54:24 -0500
+Processing by SecurityAndPrivacyVulnerabilitiesController#index as HTML
+  Rendering security_and_privacy_vulnerabilities/index.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.5ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities"[0m
+  ↳ app/views/security_and_privacy_vulnerabilities/index.html.erb:18
+  Rendered security_and_privacy_vulnerabilities/index.html.erb within layouts/application (168.1ms)
+Completed 500 Internal Server Error in 177ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `security_and_privacy_vulnerability_path' for #<#<Class:0x00007fddbd5770e0>:0x00007fddbd574b60>
+Did you mean?  security_and_privacy_vulnerabilities_path
+               security_and_privacy_vulnerabilities_url):
+    22:         <td><%= security_and_privacy_vulnerability.severity %></td>
+    23:         <td><%= security_and_privacy_vulnerability.description %></td>
+    24:         <td><%= security_and_privacy_vulnerability.advisories %></td>
+    25:         <td><%= link_to 'Show', security_and_privacy_vulnerability %></td>
+    26:         <td><%= link_to 'Edit', edit_security_and_privacy_vulnerability_path(security_and_privacy_vulnerability) %></td>
+    27:         <td><%= link_to 'Destroy', security_and_privacy_vulnerability, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    28:       </tr>
+  
+app/views/security_and_privacy_vulnerabilities/index.html.erb:25:in `block in _app_views_security_and_privacy_vulnerabilities_index_html_erb__781972445066298128_70295170563220'
+app/views/security_and_privacy_vulnerabilities/index.html.erb:18:in `_app_views_security_and_privacy_vulnerabilities_index_html_erb__781972445066298128_70295170563220'
+Started GET "/products" for ::1 at 2020-11-08 22:55:56 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 37ms (Views: 35.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/1/edit" for ::1 at 2020-11-08 22:55:58 -0500
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+Filter chain halted as #<Proc:0x00007fddbd78ef90@/Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/actionpack-5.2.4.4/lib/action_controller/metal/http_authentication.rb:72> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2020-11-08 22:56:01 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 29ms (Views: 27.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities" for ::1 at 2020-11-08 22:56:04 -0500
+Processing by SecurityAndPrivacyVulnerabilitiesController#index as HTML
+  Rendering security_and_privacy_vulnerabilities/index.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.1ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities"[0m
+  ↳ app/views/security_and_privacy_vulnerabilities/index.html.erb:18
+  Rendered security_and_privacy_vulnerabilities/index.html.erb within layouts/application (154.4ms)
+Completed 500 Internal Server Error in 165ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `security_and_privacy_vulnerability_path' for #<#<Class:0x00007fddbd5770e0>:0x00007fddc61e2958>
+Did you mean?  security_and_privacy_vulnerabilities_path
+               security_and_privacy_vulnerabilities_url):
+    22:         <td><%= security_and_privacy_vulnerability.severity %></td>
+    23:         <td><%= security_and_privacy_vulnerability.description %></td>
+    24:         <td><%= security_and_privacy_vulnerability.advisories %></td>
+    25:         <td><%= link_to 'Show', security_and_privacy_vulnerability %></td>
+    26:         <td><%= link_to 'Edit', edit_security_and_privacy_vulnerability_path(security_and_privacy_vulnerability) %></td>
+    27:         <td><%= link_to 'Destroy', security_and_privacy_vulnerability, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    28:       </tr>
+  
+app/views/security_and_privacy_vulnerabilities/index.html.erb:25:in `block in _app_views_security_and_privacy_vulnerabilities_index_html_erb__781972445066298128_70295244183880'
+app/views/security_and_privacy_vulnerabilities/index.html.erb:18:in `_app_views_security_and_privacy_vulnerabilities_index_html_erb__781972445066298128_70295244183880'
+Started GET "/security_and_privacy_vulnerabilities" for ::1 at 2020-11-08 22:56:33 -0500
+Processing by SecurityAndPrivacyVulnerabilitiesController#index as HTML
+  Rendering security_and_privacy_vulnerabilities/index.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.5ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities"[0m
+  ↳ app/views/security_and_privacy_vulnerabilities/index.html.erb:18
+  Rendered security_and_privacy_vulnerabilities/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 68ms (Views: 61.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products" for ::1 at 2020-11-08 22:56:36 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 37ms (Views: 32.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities" for ::1 at 2020-11-08 22:56:38 -0500
+Processing by SecurityAndPrivacyVulnerabilitiesController#index as HTML
+  Rendering security_and_privacy_vulnerabilities/index.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.1ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities"[0m
+  ↳ app/views/security_and_privacy_vulnerabilities/index.html.erb:18
+  Rendered security_and_privacy_vulnerabilities/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities/1" for ::1 at 2020-11-08 22:56:41 -0500
+Processing by SecurityAndPrivacyVulnerabilitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.3ms)[0m  [1m[34mSELECT  "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities" WHERE "security_and_privacy_vulnerabilities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/security_and_privacy_vulnerabilities_controller.rb:67
+  Rendering security_and_privacy_vulnerabilities/show.html.erb within layouts/application
+  Rendered security_and_privacy_vulnerabilities/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 35ms (Views: 27.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities" for ::1 at 2020-11-08 22:56:43 -0500
+Processing by SecurityAndPrivacyVulnerabilitiesController#index as HTML
+  Rendering security_and_privacy_vulnerabilities/index.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.2ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities"[0m
+  ↳ app/views/security_and_privacy_vulnerabilities/index.html.erb:18
+  Rendered security_and_privacy_vulnerabilities/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities" for ::1 at 2020-11-08 23:03:06 -0500
+Processing by SecurityAndPrivacyVulnerabilitiesController#index as HTML
+  Rendering security_and_privacy_vulnerabilities/index.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.4ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities"[0m
+  ↳ app/views/security_and_privacy_vulnerabilities/index.html.erb:18
+  Rendered security_and_privacy_vulnerabilities/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 38ms (Views: 36.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for ::1 at 2020-11-08 23:03:08 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 35ms (Views: 27.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/1" for ::1 at 2020-11-08 23:03:12 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:67
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (22.4ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Missing partial products/_security_and_privacy_vulnerabilities, application/_security_and_privacy_vulnerabilities with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/oksanapiven/Desktop/App/app/views"
+):
+    15:   <%= @product.manufacturer_id %>
+    16: </p>
+    17: <h2>Security And Privacy Vulnerabilities</h2>
+    18: <%= render 'security_and_privacy_vulnerabilities' %>
+    19: <%= link_to 'Edit', edit_product_path(@product) %> |
+    20: <%= link_to 'Back', products_path %>
+  
+app/views/products/show.html.erb:18:in `_app_views_products_show_html_erb__3109500930046752519_70295239430380'
+Started GET "/products" for ::1 at 2020-11-08 23:03:53 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products" for ::1 at 2020-11-08 23:04:40 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/1" for ::1 at 2020-11-08 23:04:42 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:67
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (Missing partial products/__security_and_privacy_vulnerabilities with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/oksanapiven/Desktop/App/app/views"
+):
+    15:   <%= @product.manufacturer_id %>
+    16: </p>
+    17: <h2>Security And Privacy Vulnerabilities</h2>
+    18: <%= render 'products/_security_and_privacy_vulnerabilities' %>
+    19: <%= link_to 'Edit', edit_product_path(@product) %> |
+    20: <%= link_to 'Back', products_path %>
+  
+app/views/products/show.html.erb:18:in `_app_views_products_show_html_erb__3109500930046752519_70295243995480'
+Started GET "/products" for ::1 at 2020-11-08 23:04:50 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products" for ::1 at 2020-11-08 23:04:55 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/1" for ::1 at 2020-11-08 23:04:56 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:67
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Missing partial products/_security_and_privacy_vulnerabilities with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/oksanapiven/Desktop/App/app/views"
+):
+    15:   <%= @product.manufacturer_id %>
+    16: </p>
+    17: <h2>Security And Privacy Vulnerabilities</h2>
+    18: <%= render 'products/security_and_privacy_vulnerabilities' %>
+    19: <%= link_to 'Edit', edit_product_path(@product) %> |
+    20: <%= link_to 'Back', products_path %>
+  
+app/views/products/show.html.erb:18:in `_app_views_products_show_html_erb__3109500930046752519_70295177912500'
+Started GET "/products" for ::1 at 2020-11-08 23:05:07 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 29ms (Views: 27.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/1" for ::1 at 2020-11-08 23:10:55 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:67
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 41ms (Views: 38.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products" for ::1 at 2020-11-08 23:10:56 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for ::1 at 2020-11-08 23:25:45 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 41ms (Views: 38.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/new" for ::1 at 2020-11-08 23:25:46 -0500
+Processing by ProductsController#new as HTML
+Filter chain halted as #<Proc:0x00007fddc61e3510@/Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/actionpack-5.2.4.4/lib/action_controller/metal/http_authentication.rb:72> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2020-11-08 23:25:49 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 47ms (Views: 46.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/manufacturers" for ::1 at 2020-11-08 23:25:51 -0500
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.5ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:21
+  Rendered manufacturers/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 42ms (Views: 36.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/products" for ::1 at 2020-11-08 23:25:53 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/manufacturers" for ::1 at 2020-11-08 23:35:27 -0500
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:21
+  Rendered manufacturers/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for ::1 at 2020-11-08 23:35:40 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:16
+  Rendered products/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities" for ::1 at 2020-11-08 23:35:41 -0500
+Processing by SecurityAndPrivacyVulnerabilitiesController#index as HTML
+  Rendering security_and_privacy_vulnerabilities/index.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.5ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities"[0m
+  ↳ app/views/security_and_privacy_vulnerabilities/index.html.erb:18
+  Rendered security_and_privacy_vulnerabilities/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 34ms (Views: 26.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities" for ::1 at 2020-11-09 00:11:56 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by SecurityAndPrivacyVulnerabilitiesController#index as HTML
+  Rendering security_and_privacy_vulnerabilities/index.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.2ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities"[0m
+  ↳ app/views/security_and_privacy_vulnerabilities/index.html.erb:18
+  Rendered security_and_privacy_vulnerabilities/index.html.erb within layouts/application (10.9ms)
+Completed 500 Internal Server Error in 247ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: bootstrap-sprokets.
+        on line 1:2 of app/assets/stylesheets/application.css.scss
+>>  @import "bootstrap-sprokets";
+
+   -^
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.css.scss:1
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__3824999867586328034_70357540095500'
+Started GET "/security_and_privacy_vulnerabilities" for ::1 at 2020-11-09 00:13:10 -0500
+Processing by SecurityAndPrivacyVulnerabilitiesController#index as HTML
+  Rendering security_and_privacy_vulnerabilities/index.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.1ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities"[0m
+  ↳ app/views/security_and_privacy_vulnerabilities/index.html.erb:18
+  Rendered security_and_privacy_vulnerabilities/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 1932ms (Views: 1930.7ms | ActiveRecord: 0.1ms)
+
+
