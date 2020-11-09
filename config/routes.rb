@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'home/index'
   get '/security_and_privacy_vulnerabilities', to: 'security_and_privacy_vulnerabilities#index'
   resources :security_and_privacy_vulnerabilities
   get '/manufacturers', to: 'manufacturers#index'
