@@ -1,34 +1,39 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Products</h1>
-
-<table>
-  <thead>
+<h1 class="display-1">Products</h1>
+<div class="container">
+<div class="card">
+  <div class="card-body">
+<table class="table">
+  <thead class="thead-dark">
     <tr>
-      <th>Name</th>
-      <th>Barcode</th>
-      <th>Manufacturer</th>
-      <th colspan="3"></th>
+      <th scope="col">Name</th>
+      <th scope="col">Barcode</th>
+      <th scope="col">Manufacturer</th>
+
     </tr>
   </thead>
-
-  <tbody>
+  <tbody id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
     <% @products.each do |product| %>
       <tr>
         <td><%= product.name %></td>
         <td><%= product.barcode %></td>
         <td><%= product.manufacturer_id %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="badge badge-dark"><%= link_to 'Show', product %></td>
+        <td class="badge badge-dark"><%= link_to 'Edit', edit_product_path(product) %></td>
+        <td class="badge badge-dark"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
+</div>
+</div>
+<div class="container">
 
 <br>
 
-<%= link_to 'New Product', new_product_path %><br><br>
-<%= link_to 'Go to Manufacturers Page', manufacturers_path %><br><br>
-<%= link_to 'Go to Security And Privacy Vulnerabilities Page', security_and_privacy_vulnerabilities_path %>
+<button type="button" class="btn btn-dark btn-lg"><%= link_to 'New Product', new_product_path %></button><br><br>
+<button type="button" class="btn btn-dark btn-lg"><%= link_to 'Go to Manufacturers Page', manufacturers_path %></button><br><br>
+<button type="button" class="btn btn-dark btn-lg"><%= link_to 'Go to Security And Privacy Vulnerabilities Page', security_and_privacy_vulnerabilities_path %></button>
+
 
