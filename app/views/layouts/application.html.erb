@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <%= csrf_meta_tags %>
-  <%= csp_meta_tag %>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= content_for?(:title) ? yield(:title) : "About Cybersecurity" %></title>
-  <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "About Cybersecurity" %>">
-  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <title>Cyberapp</title>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= csrf_meta_tags %>
   </head>
 
   <body>
-  <header>
-      <%= render 'layouts/navigation' %>
-    </header>
-    <main role="main">
-    <%= content_for?(:content) ? yield(:content) : yield %>
-    </main>
-
+ 
+  <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Cybersecurity of Social Robots</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><%= link_to "Home", home_index_path, class: "nav-link js-scroll-trigger" %></li>
+                        <li class="nav-item"><%= link_to "Products", products_path, class: "nav-link js-scroll-trigger" %></li>
+                        <li class="nav-item"><%= link_to "Manufacturers", manufacturers_path, class: "nav-link js-scroll-trigger" %></li>
+                        <li class="nav-item"><%= link_to "Security And Privacy Vulnerabilities", security_and_privacy_vulnerabilities_path, class: "nav-link js-scroll-trigger" %></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <%= yield %>
+    <!-- Footer-->
+    <footer class="footer bg-black small text-center text-white-50"><div class="container">Copyright © Your Website 2020</div></footer>
   </body>
 </html>
