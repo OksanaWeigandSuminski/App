@@ -13,6 +13,23 @@
 <p>
   <strong>Manufacturer:</strong>
   <%= @product.manufacturer_id %>
+  <%= link_to 'Show', controller: "manufacturers", action: "show", id: @product.manufacturer_id %>
 </p>
+
+<% @product.security_and_privacy_vulnerabilities.each do |security_and_privacy_vulnerability| %>
+  <tr>
+    <td><%= security_and_privacy_vulnerability.product_id %></td>
+    <td><%= security_and_privacy_vulnerability.cve_id %></td>
+    <td><%= security_and_privacy_vulnerability.severity %></td>
+    <td><%= security_and_privacy_vulnerability.description %></td>
+    <td><%= security_and_privacy_vulnerability.advisories %></td>
+    <br><br>
+
+    <td><%= link_to 'Show', security_and_privacy_vulnerability %></td>
+    <td><%= link_to 'Edit', edit_security_and_privacy_vulnerability_path(security_and_privacy_vulnerability) %></td>
+    <td><%= link_to 'Destroy', security_and_privacy_vulnerability, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+  <br><br>
+<% end %>
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
