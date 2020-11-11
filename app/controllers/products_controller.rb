@@ -4,7 +4,10 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all
+    @products = Product.where(nil) # creates an anonymous scope
+    @products = @products.filter_by_barcode(params[:barcode].to_i) if params[:barcode].present?
+    @products = @products.filter_by_name(params[:name]) if params[:name].present?
+    @products = @products.filter_by_manufacturer_id(params[:manufacturer].to_i) if params[:manufacturer].present?
   end
 
   # GET /products/1
