@@ -12,8 +12,19 @@ a{
 a:hover {
     text-decoration: none;
   }
-  .jumbotron
-  {
-      background-image: url("2.jpg")
-  }
-  
+//   .jumbotron{
+//       background-image: url("2.jpg")
+//   }
+
+.navbar {
+     background-color: #ffffff;
+}
+#about{
+    margin-top: 50px;
+} 
+#table {
+
+
+    justify-content: center;
+    align-items: center;
+} 

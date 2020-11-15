@@ -1,37 +1,43 @@
 <p id="notice"><%= notice %></p>
-
-<h1 class="display-1">Products</h1>
 <div class="container">
+<h1 class="display-1">Products</h1>
 
 
-<form method="GET">
+
+<form method="GET" class="form-inline md-form mr-auto mb-4">
+<div class="container pt-4">
+    <div id="products"class="row">
+
 <div>
-<label>name</label>
-<input name="name" type="search"/>
+<input name="name" class="form-control mr-sm-2" placeholder="Name" type="search"/>
+<button class="btn btn-outline-dark btn-rounded btn-sm my-0 mr-sm-5" type="submit">Search</button>
 </div>
 
 <div>
-<label>manufacturer #</label>
-<input name="manufacturer" type="search"/>
+<input name="manufacturer" class="form-control mr-sm-2" placeholder="Manufacturer #" type="search"/>
+<button class="btn btn-outline-dark btn-rounded btn-sm my-0 mr-sm-5" type="submit">Search</button>
 </div>
 
 <div>
-<label>barcode</label>
-<input name="barcode" type="search"/>
+<input name="barcode" class="form-control mr-sm-2" placeholder="Barcode" type="search"/>
+<button class="btn btn-outline-dark btn-rounded btn-sm my-0 mr-sm-5" type="submit">Search</button>
 </div>
-<button type="submit">search</button>
+</div>
+</div>
+
 </form>
 
+<div class="table-responsive">
 <table class="table">
   <thead class="thead-dark">
     <tr>
-      <th scope="col">Name</th>
-      <th scope="col">Barcode</th>
-      <th scope="col">Manufacturer</th>
+      <th scope="col-lg-4">Name</th>
+      <th scope="col-lg-4">Barcode</th>
+      <th scope="col-lg-4">Manufacturer</th>
 
     </tr>
   </thead>
-  <tbody id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
+  <tbody id="table">
     <% @products.each do |product| %>
       <tr>
         <td><%= product.name %></td>
@@ -44,13 +50,12 @@
     <% end %>
   </tbody>
 </table>
-
+</div>
 
 
 <br>
 <div class="buttons">
-<button type="button" class="btn btn-dark btn-lg"><%= link_to 'New Product', new_product_path %></button>
-<button type="button" class="btn btn-dark btn-lg"><%= link_to 'Go to Manufacturers Page', manufacturers_path %></button>
-<button type="button" class="btn btn-dark btn-lg"><%= link_to 'Go to Security And Privacy Vulnerabilities Page', security_and_privacy_vulnerabilities_path %></button>
+<button type="button" class="btn btn-dark"><%= link_to 'New Product', new_product_path %></button>
 </div>
+
 
