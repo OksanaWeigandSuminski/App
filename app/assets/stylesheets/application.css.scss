@@ -1,13 +1,18 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway&display=swap');
+body{
+    font-family: 'Raleway', sans-serif;
+}
 h1{
     text-align: center;
     margin: 50px;
+    font-family: 'Playfair Display', serif;
 }
 .badge {
-    margin-left: 20px;
+    margin-left: 5px;
 }
 a{
-    color: lightgray;
+    color: rgb(174, 172, 172);
 }
 a:hover {
     text-decoration: none;
@@ -19,12 +24,22 @@ a:hover {
 .navbar {
      background-color: #ffffff;
 }
+.nav-link .navbar-brand{
+    font-family: 'Raleway', sans-serif;
+}
+
 #about{
     margin-top: 50px;
+    margin-bottom: 50px;
 } 
-#table {
-
-
-    justify-content: center;
-    align-items: center;
-} 
+// #table{
+//     margin-left: 20px;
+//     margin-right: 20px;
+// }
+.blog-footer {
+    padding: 2.5rem 0;
+    color: #808080;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: .05rem solid #c2c1c1;
+}

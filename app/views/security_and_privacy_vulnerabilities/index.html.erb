@@ -1,36 +1,40 @@
 <p id="notice"><%= notice %></p>
+<div class="container">
+<h1 class="display-3">Security And Privacy Vulnerabilities</h1>
 
-<h1>Security And Privacy Vulnerabilities</h1>
-
-<table>
-  <thead>
+<div class="table-responsive">
+<table class="table">
+  <thead class="thead-dark">
     <tr>
-      <th>Product</th>
-      <th>Cve</th>
-      <th>Severity</th>
-      <th>Description</th>
-      <th>Advisories</th>
-      <th colspan="3"></th>
+      <th style="text-align:center">Product</th>
+      <th style="text-align:center">Cve</th>
+      <th style="text-align:center">Severity</th>
+      <th style="text-align:center">Description</th>
+      <th style="text-align:center">Advisories</th>
+      <th style="text-align:center" colspan="0">Controllers</th>
     </tr>
   </thead>
 
   <tbody>
     <% @security_and_privacy_vulnerabilities.each do |security_and_privacy_vulnerability| %>
       <tr>
-        <td><%= security_and_privacy_vulnerability.product_id %></td>
-        <td><%= security_and_privacy_vulnerability.cve_id %></td>
-        <td><%= security_and_privacy_vulnerability.severity %></td>
-        <td><%= security_and_privacy_vulnerability.description %></td>
-        <td><%= security_and_privacy_vulnerability.advisories %></td>
-        <td><%= link_to 'Show', security_and_privacy_vulnerability %></td>
-        <td><%= link_to 'Edit', edit_security_and_privacy_vulnerability_path(security_and_privacy_vulnerability) %></td>
-        <td><%= link_to 'Destroy', security_and_privacy_vulnerability, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td style="text-align:center"><%= security_and_privacy_vulnerability.product_id %></td>
+        <td style="text-align:center"><%= security_and_privacy_vulnerability.cve_id %></td>
+        <td style="text-align:center"><%= security_and_privacy_vulnerability.severity %></td>
+        <td style="text-align:center"><%= security_and_privacy_vulnerability.description %></td>
+        <td style="text-align:center"><%= security_and_privacy_vulnerability.advisories %></td>
+        <td style="text-align:center" class="badge badge-dark"><%= link_to 'Show', security_and_privacy_vulnerability %></td>
+        <td style="text-align:center" class="badge badge-dark"><%= link_to 'Edit', edit_security_and_privacy_vulnerability_path(security_and_privacy_vulnerability) %></td>
+        <td style="text-align:center" class="badge badge-dark"><%= link_to 'Destroy', security_and_privacy_vulnerability, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
+</div>
 
 <br>
+<div class="buttons">
+<button type="button" class="btn btn-dark"><%= link_to 'New Security And Privacy Vulnerability', new_security_and_privacy_vulnerability_path %></button>
+</div>
 
-<%= link_to 'New Security And Privacy Vulnerability', new_security_and_privacy_vulnerability_path %><br><br>
-<%= link_to 'Go to Products Page', products_path %>
+</div>

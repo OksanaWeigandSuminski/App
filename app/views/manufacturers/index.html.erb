@@ -1,42 +1,46 @@
 <p id="notice"><%= notice %></p>
+<div class="container">
+<h1 class="display-3">Manufacturers</h1>
 
-<h1>Manufacturers</h1>
-
-<table>
-  <thead>
+<div class="table-responsive">
+<table class="table">
+  <thead class="thead-dark">
     <tr>
-      <th>Name</th>
-      <th>Street address</th>
-      <th>City</th>
-      <th>State</th>
-      <th>Postal code</th>
-      <th>Country or region</th>
-      <th>Phone</th>
-      <th>Email</th>
-      <th colspan="3"></th>
+      <th style="text-align:center">Name</th>
+      <th style="text-align:center">Street address</th>
+      <th style="text-align:center">City</th>
+      <th style="text-align:center">State</th>
+      <th style="text-align:center">Postal code</th>
+      <th style="text-align:center">Country or region</th>
+      <th style="text-align:center">Phone</th>
+      <th style="text-align:center">Email</th>
+      <th colspan="0" style="text-align:center">Controllers</th>
     </tr>
   </thead>
 
-  <tbody>
+  <tbody id="table">
     <% @manufacturers.each do |manufacturer| %>
       <tr>
-        <td><%= manufacturer.name %></td>
-        <td><%= manufacturer.street_address %></td>
-        <td><%= manufacturer.city %></td>
-        <td><%= manufacturer.state %></td>
-        <td><%= manufacturer.postal_code %></td>
-        <td><%= manufacturer.country_or_region %></td>
-        <td><%= manufacturer.phone %></td>
-        <td><%= manufacturer.email %></td>
-        <td><%= link_to 'Show', manufacturer %></td>
-        <td><%= link_to 'Edit', edit_manufacturer_path(manufacturer) %></td>
-        <td><%= link_to 'Destroy', manufacturer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td scope="col" style="text-align:center"><%= manufacturer.name %></td>
+        <td scope="col" style="text-align:center"><%= manufacturer.street_address %></td>
+        <td scope="col" style="text-align:center"><%= manufacturer.city %></td>
+        <td scope="col" style="text-align:center"><%= manufacturer.state %></td>
+        <td scope="col" style="text-align:center"><%= manufacturer.postal_code %></td>
+        <td scope="col" style="text-align:center"><%= manufacturer.country_or_region %></td>
+        <td scope="col" style="text-align:center"><%= manufacturer.phone %></td>
+        <td scope="col" style="text-align:center"><%= manufacturer.email %></td>
+        <td style="align-items: center;" class="badge badge-dark"><%= link_to 'Show', manufacturer %></td>
+        <td style="align-items: center;" class="badge badge-dark"><%= link_to 'Edit', edit_manufacturer_path(manufacturer) %></td>
+        <td style="align-items: center;" class="badge badge-dark"><%= link_to 'Destroy', manufacturer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
+</div>
 
 <br>
+<div class="buttons">
+<button type="button" class="btn btn-dark"><%= link_to 'New Manufacturer', new_manufacturer_path %></button>
+</div>
 
-<%= link_to 'New Manufacturer', new_manufacturer_path %><br><br>
-<%= link_to 'Go to Products Page', products_path %>
+</div>

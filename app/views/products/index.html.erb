@@ -1,61 +1,61 @@
 <p id="notice"><%= notice %></p>
 <div class="container">
-<h1 class="display-1">Products</h1>
+<h1 class="display-3">Products</h1>
 
 
 
 <form method="GET" class="form-inline md-form mr-auto mb-4">
-<div class="container pt-4">
+  <div class="container pt-4">
     <div id="products"class="row">
+      <div>
+      <input name="name" class="form-control mr-sm-2" placeholder="Name" type="search"/>
+      <button class="btn btn-outline-dark btn-rounded btn-sm my-0 mr-sm-5" type="submit">Search</button>
+      </div>
 
-<div>
-<input name="name" class="form-control mr-sm-2" placeholder="Name" type="search"/>
-<button class="btn btn-outline-dark btn-rounded btn-sm my-0 mr-sm-5" type="submit">Search</button>
-</div>
+      <div>
+      <input name="manufacturer" class="form-control mr-sm-2" placeholder="Manufacturer #" type="search"/>
+      <button class="btn btn-outline-dark btn-rounded btn-sm my-0 mr-sm-5" type="submit">Search</button>
+      </div>
 
-<div>
-<input name="manufacturer" class="form-control mr-sm-2" placeholder="Manufacturer #" type="search"/>
-<button class="btn btn-outline-dark btn-rounded btn-sm my-0 mr-sm-5" type="submit">Search</button>
-</div>
+      <div>
+      <input name="barcode" class="form-control mr-sm-2" placeholder="Barcode" type="search"/>
+      <button class="btn btn-outline-dark btn-rounded btn-sm my-0 mr-sm-5" type="submit">Search</button>
+      </div>
 
-<div>
-<input name="barcode" class="form-control mr-sm-2" placeholder="Barcode" type="search"/>
-<button class="btn btn-outline-dark btn-rounded btn-sm my-0 mr-sm-5" type="submit">Search</button>
-</div>
-</div>
-</div>
-
+      </div>
+      </div>
 </form>
 
 <div class="table-responsive">
 <table class="table">
   <thead class="thead-dark">
     <tr>
-      <th scope="col-lg-4">Name</th>
-      <th scope="col-lg-4">Barcode</th>
-      <th scope="col-lg-4">Manufacturer</th>
-
+      <th style="text-align:center">Name</th>
+      <th style="text-align:center">Barcode</th>
+      <th style="text-align:center">Manufacturer</th>
+      <th colspan="0" style="text-align:center">Controllers</th>
     </tr>
   </thead>
+
   <tbody id="table">
     <% @products.each do |product| %>
       <tr>
-        <td><%= product.name %></td>
-        <td><%= product.barcode %></td>
-        <td><%= product.manufacturer_id %></td>
-        <td class="badge badge-dark"><%= link_to 'Show', product %></td>
-        <td class="badge badge-dark"><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td class="badge badge-dark"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td style="text-align:center"><%= product.name %></td>
+        <td style="text-align:center"><%= product.barcode %></td>
+        <td style="text-align:center"><%= product.manufacturer_id %></td>
+        <td class="badge badge-dark" style="align-items: center;"><%= link_to 'Show', product %></td>
+        <td class="badge badge-dark" style="align-items: center;"><%= link_to 'Edit', edit_product_path(product) %></td>
+        <td class="badge badge-dark" style="align-items: center;"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 </div>
 
-
 <br>
 <div class="buttons">
 <button type="button" class="btn btn-dark"><%= link_to 'New Product', new_product_path %></button>
 </div>
 
+</div>
 
