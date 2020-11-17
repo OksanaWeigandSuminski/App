@@ -40359,3 +40359,372 @@ Processing by ManufacturersController#edit as HTML
 Completed 200 OK in 38ms (Views: 36.1ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/manufacturers/1/edit" for ::1 at 2020-11-16 23:56:47 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by ManufacturersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67
+  Rendering manufacturers/edit.html.erb within layouts/application
+  Rendered manufacturers/_form.html.erb (12.8ms)
+  Rendered manufacturers/edit.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 351ms (Views: 327.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities" for ::1 at 2020-11-16 23:58:36 -0500
+Processing by SecurityAndPrivacyVulnerabilitiesController#index as HTML
+  Rendering security_and_privacy_vulnerabilities/index.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.2ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities"[0m
+  ↳ app/views/security_and_privacy_vulnerabilities/index.html.erb:19
+  Rendered security_and_privacy_vulnerabilities/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 43ms (Views: 36.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities/1/edit" for ::1 at 2020-11-16 23:58:37 -0500
+Processing by SecurityAndPrivacyVulnerabilitiesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.3ms)[0m  [1m[34mSELECT  "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities" WHERE "security_and_privacy_vulnerabilities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/security_and_privacy_vulnerabilities_controller.rb:67
+  Rendering security_and_privacy_vulnerabilities/edit.html.erb within layouts/application
+  Rendered security_and_privacy_vulnerabilities/_form.html.erb (10.5ms)
+  Rendered security_and_privacy_vulnerabilities/edit.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 44ms (Views: 41.2ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/security_and_privacy_vulnerabilities/1" for ::1 at 2020-11-16 23:58:47 -0500
+Processing by SecurityAndPrivacyVulnerabilitiesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wsTFNHP58RZ9xTqWKi8o7BT8BHQfddaCMV78fmU/vbbe98Osdkj0Zhl0yH7Z9k1fVLgn+b30WhBcrYNJ+7sbig==", "security_and_privacy_vulnerability"=>{"product_id"=>"2", "cve_id"=>"CVE-2015-3434", "severity"=>"High", "description"=>"Cross-site scripting (XSS) vulnerability in example.html in Genericons before 3.3.1, as used in WordPress before 4.2.2, allows remote attackers to inject arbitrary web script or HTML via a fragment identifier.\r\n", "advisories"=>"Vulnerability is valid if product versions listed below are used TOGETHER WITH(AND)\r\nAutomattic Genericons 3.3,\r\nWordpress Wordpress 4.2.1"}, "commit"=>"Update Security and privacy vulnerability", "id"=>"1"}
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.2ms)[0m  [1m[34mSELECT  "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities" WHERE "security_and_privacy_vulnerabilities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/security_and_privacy_vulnerabilities_controller.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/security_and_privacy_vulnerabilities_controller.rb:44
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/security_and_privacy_vulnerabilities_controller.rb:44
+  [1m[36mSecurityAndPrivacyVulnerability Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "security_and_privacy_vulnerabilities" WHERE "security_and_privacy_vulnerabilities"."cve_id" = ? AND "security_and_privacy_vulnerabilities"."id" != ? LIMIT ?[0m  [["cve_id", "CVE-2015-3434"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/security_and_privacy_vulnerabilities_controller.rb:44
+  [1m[36mSecurityAndPrivacyVulnerability Update (0.4ms)[0m  [1m[33mUPDATE "security_and_privacy_vulnerabilities" SET "cve_id" = ?, "updated_at" = ? WHERE "security_and_privacy_vulnerabilities"."id" = ?[0m  [["cve_id", "CVE-2015-3434"], ["updated_at", "2020-11-17 04:58:47.933380"], ["id", 1]]
+  ↳ app/controllers/security_and_privacy_vulnerabilities_controller.rb:44
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/security_and_privacy_vulnerabilities_controller.rb:44
+Redirected to http://localhost:3000/security_and_privacy_vulnerabilities/1
+Completed 302 Found in 24ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities/1" for ::1 at 2020-11-16 23:58:47 -0500
+Processing by SecurityAndPrivacyVulnerabilitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.1ms)[0m  [1m[34mSELECT  "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities" WHERE "security_and_privacy_vulnerabilities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/security_and_privacy_vulnerabilities_controller.rb:67
+  Rendering security_and_privacy_vulnerabilities/show.html.erb within layouts/application
+  Rendered security_and_privacy_vulnerabilities/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 30ms (Views: 28.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities" for ::1 at 2020-11-16 23:58:54 -0500
+Processing by SecurityAndPrivacyVulnerabilitiesController#index as HTML
+  Rendering security_and_privacy_vulnerabilities/index.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.2ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities"[0m
+  ↳ app/views/security_and_privacy_vulnerabilities/index.html.erb:19
+  Rendered security_and_privacy_vulnerabilities/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 62ms (Views: 60.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities" for ::1 at 2020-11-17 00:01:40 -0500
+Processing by SecurityAndPrivacyVulnerabilitiesController#index as HTML
+  Rendering security_and_privacy_vulnerabilities/index.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.1ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities"[0m
+  ↳ app/views/security_and_privacy_vulnerabilities/index.html.erb:19
+  Rendered security_and_privacy_vulnerabilities/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 29ms (Views: 27.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/manufacturers" for ::1 at 2020-11-17 00:01:41 -0500
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.3ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:22
+  Rendered manufacturers/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 34ms (Views: 32.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/manufacturers/1" for ::1 at 2020-11-17 00:01:44 -0500
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."manufacturer_id" = ?[0m  [["manufacturer_id", 1]]
+  ↳ app/views/manufacturers/show.html.erb:42
+  Rendered manufacturers/show.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 50ms (Views: 42.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/manufacturers/1/edit" for ::1 at 2020-11-17 00:01:45 -0500
+Processing by ManufacturersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67
+  Rendering manufacturers/edit.html.erb within layouts/application
+  Rendered manufacturers/_form.html.erb (4.8ms)
+  Rendered manufacturers/edit.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 37ms (Views: 34.7ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/manufacturers/1" for ::1 at 2020-11-17 00:01:58 -0500
+Processing by ManufacturersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rOzGZ1zEiUwTDD/58dFvTh7IvL3VyYrMNJdfM7dSXJzl8t6zHGVxDW4oIB9nf9MIiwkZ39T8zsXGB8PQ2ufZyA==", "manufacturer"=>{"name"=>"RoboLink", "street_address"=>"77 Caroll str.", "city"=>"New York", "state"=>"NY", "postal_code"=>"45684", "country_or_region"=>"Canada", "phone"=>"1276453890", "email"=>"robolink@gmail.com"}, "commit"=>"Update Manufacturer", "id"=>"1"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:44
+  [1m[36mManufacturer Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "manufacturers" WHERE "manufacturers"."name" = ? AND "manufacturers"."id" != ? LIMIT ?[0m  [["name", "RoboLink"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:44
+  [1m[36mManufacturer Update (0.6ms)[0m  [1m[33mUPDATE "manufacturers" SET "country_or_region" = ?, "updated_at" = ? WHERE "manufacturers"."id" = ?[0m  [["country_or_region", "Canada"], ["updated_at", "2020-11-17 05:01:58.289950"], ["id", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:44
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:44
+Redirected to http://localhost:3000/manufacturers/1
+Completed 302 Found in 8ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/manufacturers/1" for ::1 at 2020-11-17 00:01:58 -0500
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."manufacturer_id" = ?[0m  [["manufacturer_id", 1]]
+  ↳ app/views/manufacturers/show.html.erb:42
+  Rendered manufacturers/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 34ms (Views: 31.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/manufacturers" for ::1 at 2020-11-17 00:02:01 -0500
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.4ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:22
+  Rendered manufacturers/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/manufacturers" for ::1 at 2020-11-17 00:02:08 -0500
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:22
+  Rendered manufacturers/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 51ms (Views: 49.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/manufacturers/1/edit" for ::1 at 2020-11-17 00:02:16 -0500
+Processing by ManufacturersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67
+  Rendering manufacturers/edit.html.erb within layouts/application
+  Rendered manufacturers/_form.html.erb (4.2ms)
+  Rendered manufacturers/edit.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 37ms (Views: 35.7ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/manufacturers/1" for ::1 at 2020-11-17 00:02:23 -0500
+Processing by ManufacturersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QPrheaFJ9VZwUuXmx7vXyG4Q5saDu+CtAUZLjczeBWMJ5Pmt4egNFw12+gBRFWuO+9FDpIKOpKTz1tduoWuANw==", "manufacturer"=>{"name"=>"RoboLink", "street_address"=>"77 Caroll str.", "city"=>"New York", "state"=>"NY", "postal_code"=>"45684", "country_or_region"=>"NY", "phone"=>"1276453890", "email"=>"robolink@gmail.com"}, "commit"=>"Update Manufacturer", "id"=>"1"}
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:44
+  [1m[36mManufacturer Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "manufacturers" WHERE "manufacturers"."name" = ? AND "manufacturers"."id" != ? LIMIT ?[0m  [["name", "RoboLink"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:44
+  [1m[36mManufacturer Update (0.5ms)[0m  [1m[33mUPDATE "manufacturers" SET "country_or_region" = ?, "updated_at" = ? WHERE "manufacturers"."id" = ?[0m  [["country_or_region", "NY"], ["updated_at", "2020-11-17 05:02:23.521830"], ["id", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:44
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:44
+Redirected to http://localhost:3000/manufacturers/1
+Completed 302 Found in 9ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/manufacturers/1" for ::1 at 2020-11-17 00:02:23 -0500
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."manufacturer_id" = ?[0m  [["manufacturer_id", 1]]
+  ↳ app/views/manufacturers/show.html.erb:42
+  Rendered manufacturers/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/manufacturers" for ::1 at 2020-11-17 00:02:25 -0500
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:22
+  Rendered manufacturers/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/manufacturers/1/edit" for ::1 at 2020-11-17 00:02:32 -0500
+Processing by ManufacturersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67
+  Rendering manufacturers/edit.html.erb within layouts/application
+  Rendered manufacturers/_form.html.erb (6.0ms)
+  Rendered manufacturers/edit.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 38ms (Views: 36.2ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/manufacturers/1" for ::1 at 2020-11-17 00:02:39 -0500
+Processing by ManufacturersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lrFtCioWoBQgYvszV1hUELix1bKnLhTV3DYeWYpQ4S/fr3XeardYVV1G5NXB9uhWLXBw0KYbUNwupoK65+Vkew==", "manufacturer"=>{"name"=>"RoboLink", "street_address"=>"77 Caroll str.", "city"=>"New York", "state"=>"NY", "postal_code"=>"45684", "country_or_region"=>"United States", "phone"=>"1276453890", "email"=>"robolink@gmail.com"}, "commit"=>"Update Manufacturer", "id"=>"1"}
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:44
+  [1m[36mManufacturer Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "manufacturers" WHERE "manufacturers"."name" = ? AND "manufacturers"."id" != ? LIMIT ?[0m  [["name", "RoboLink"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:44
+  [1m[36mManufacturer Update (0.4ms)[0m  [1m[33mUPDATE "manufacturers" SET "country_or_region" = ?, "updated_at" = ? WHERE "manufacturers"."id" = ?[0m  [["country_or_region", "United States"], ["updated_at", "2020-11-17 05:02:39.407143"], ["id", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:44
+  [1m[35m (6.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/manufacturers_controller.rb:44
+Redirected to http://localhost:3000/manufacturers/1
+Completed 302 Found in 13ms (ActiveRecord: 7.5ms)
+
+
+Started GET "/manufacturers/1" for ::1 at 2020-11-17 00:02:39 -0500
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mManufacturer Load (0.1ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."manufacturer_id" = ?[0m  [["manufacturer_id", 1]]
+  ↳ app/views/manufacturers/show.html.erb:42
+  Rendered manufacturers/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/manufacturers" for ::1 at 2020-11-17 00:02:40 -0500
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:22
+  Rendered manufacturers/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/manufacturers/1" for ::1 at 2020-11-17 00:02:48 -0500
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."manufacturer_id" = ?[0m  [["manufacturer_id", 1]]
+  ↳ app/views/manufacturers/show.html.erb:42
+  Rendered manufacturers/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 35ms (Views: 33.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for ::1 at 2020-11-17 00:03:18 -0500
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 30ms (Views: 27.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/1/edit" for ::1 at 2020-11-17 00:03:20 -0500
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:70
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (3.9ms)
+  Rendered products/edit.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 35ms (Views: 32.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/manufacturers" for ::1 at 2020-11-17 00:03:25 -0500
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:22
+  Rendered manufacturers/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/manufacturers/1/edit" for ::1 at 2020-11-17 00:03:26 -0500
+Processing by ManufacturersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67
+  Rendering manufacturers/edit.html.erb within layouts/application
+  Rendered manufacturers/_form.html.erb (4.2ms)
+  Rendered manufacturers/edit.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 37ms (Views: 35.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities" for ::1 at 2020-11-17 00:03:31 -0500
+Processing by SecurityAndPrivacyVulnerabilitiesController#index as HTML
+  Rendering security_and_privacy_vulnerabilities/index.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.2ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities"[0m
+  ↳ app/views/security_and_privacy_vulnerabilities/index.html.erb:19
+  Rendered security_and_privacy_vulnerabilities/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 52ms (Views: 51.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities/1/edit" for ::1 at 2020-11-17 00:03:32 -0500
+Processing by SecurityAndPrivacyVulnerabilitiesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.3ms)[0m  [1m[34mSELECT  "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities" WHERE "security_and_privacy_vulnerabilities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/security_and_privacy_vulnerabilities_controller.rb:67
+  Rendering security_and_privacy_vulnerabilities/edit.html.erb within layouts/application
+  Rendered security_and_privacy_vulnerabilities/_form.html.erb (3.7ms)
+  Rendered security_and_privacy_vulnerabilities/edit.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 36ms (Views: 34.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities/1" for ::1 at 2020-11-17 00:03:37 -0500
+Processing by SecurityAndPrivacyVulnerabilitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.1ms)[0m  [1m[34mSELECT  "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities" WHERE "security_and_privacy_vulnerabilities"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/security_and_privacy_vulnerabilities_controller.rb:67
+  Rendering security_and_privacy_vulnerabilities/show.html.erb within layouts/application
+  Rendered security_and_privacy_vulnerabilities/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 34ms (Views: 32.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities" for ::1 at 2020-11-17 00:03:42 -0500
+Processing by SecurityAndPrivacyVulnerabilitiesController#index as HTML
+  Rendering security_and_privacy_vulnerabilities/index.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.2ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities"[0m
+  ↳ app/views/security_and_privacy_vulnerabilities/index.html.erb:19
+  Rendered security_and_privacy_vulnerabilities/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/manufacturers" for ::1 at 2020-11-17 00:03:57 -0500
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:22
+  Rendered manufacturers/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 31ms (Views: 29.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/manufacturers/1" for ::1 at 2020-11-17 00:03:59 -0500
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mManufacturer Load (0.2ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."manufacturer_id" = ?[0m  [["manufacturer_id", 1]]
+  ↳ app/views/manufacturers/show.html.erb:42
+  Rendered manufacturers/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 36ms (Views: 33.7ms | ActiveRecord: 0.4ms)
+
+
