@@ -8,17 +8,17 @@
   <div class="container pt-4">
     <div id="products"class="row">
       <div>
-      <input name="name" class="form-control mr-sm-2" placeholder="Name" type="search"/>
+      <input name="name" class="form-control mr-sm-2" placeholder="Name..." type="search"/>
       <button class="btn btn-outline-dark btn-rounded btn-sm my-0 mr-sm-5" type="submit">Search</button>
       </div>
 
       <div>
-      <input name="manufacturer" class="form-control mr-sm-2" placeholder="Manufacturer #" type="search"/>
+      <input name="manufacturer" class="form-control mr-sm-2" placeholder="Manufacturer #..." type="search"/>
       <button class="btn btn-outline-dark btn-rounded btn-sm my-0 mr-sm-5" type="submit">Search</button>
       </div>
 
       <div>
-      <input name="barcode" class="form-control mr-sm-2" placeholder="Barcode" type="search"/>
+      <input name="barcode" class="form-control mr-sm-2" placeholder="Barcode..." type="search"/>
       <button class="btn btn-outline-dark btn-rounded btn-sm my-0 mr-sm-5" type="submit">Search</button>
       </div>
 
@@ -43,9 +43,9 @@
         <td style="text-align:center"><%= product.name %></td>
         <td style="text-align:center"><%= product.barcode %></td>
         <td style="text-align:center"><%= product.manufacturer_id %></td>
-        <td class="badge badge-dark" style="align-items: center;"><%= link_to 'Show', product %></td>
-        <td class="badge badge-dark" style="align-items: center;"><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td class="badge badge-dark" style="align-items: center;"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td style="text-align:center"><%= link_to 'Show', product, :class => "badge badge-dark" %>
+        <%= link_to 'Edit', edit_product_path(product), :class => "badge badge-dark" %>
+        <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, :class => "badge badge-dark" %></td>
       </tr>
     <% end %>
   </tbody>

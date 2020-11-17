@@ -1,14 +1,13 @@
 <p id="notice"><%= notice %></p>
+<div class="container">
+<div class="table-responsive">
+<table class="table table-bordered">
+<tbody style="text-align:center">
 
-<p>
-  <strong>Product:</strong>
-  <%= @security_and_privacy_vulnerability.product_id %>
-</p>
+<tr>
+<th style="text-align:center; width: 50px;">Product #</th>
+<th style="text-align:center; width: 50px;">Cve</th>
 
-<p>
-  <strong>Cve:</strong>
-  <%= @security_and_privacy_vulnerability.cve_id %>
-</p>
 
 <p>
   <strong>Severity:</strong>
@@ -25,7 +24,17 @@
   <%= @security_and_privacy_vulnerability.advisories %>
 </p>
 
+<tr>
+<td><%= @security_and_privacy_vulnerability.product_id %></td>
+<td><%= @security_and_privacy_vulnerability.cve_id %></td>
 
+
+</tr>
+</tr>
+</tbody>
+</table>
+</div>
 
 <%= link_to 'Edit', edit_security_and_privacy_vulnerability_path(@security_and_privacy_vulnerability), :class => "btn btn-dark btn-sm" %>
 <%= link_to 'Back', security_and_privacy_vulnerabilities_path, :class => "btn btn-dark btn-sm" %>
+</div>

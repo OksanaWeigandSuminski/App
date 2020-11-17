@@ -14,7 +14,7 @@
       <th style="text-align:center">Country or region</th>
       <th style="text-align:center">Phone</th>
       <th style="text-align:center">Email</th>
-      <th colspan="0" style="text-align:center">Controllers</th>
+      <th colspan="0" style="text-align:center; width: 200px;">Controllers</th>
     </tr>
   </thead>
 
@@ -29,9 +29,9 @@
         <td scope="col" style="text-align:center"><%= manufacturer.country_or_region %></td>
         <td scope="col" style="text-align:center"><%= manufacturer.phone %></td>
         <td scope="col" style="text-align:center"><%= manufacturer.email %></td>
-        <td style="align-items: center;" class="badge badge-dark"><%= link_to 'Show', manufacturer %></td>
-        <td style="align-items: center;" class="badge badge-dark"><%= link_to 'Edit', edit_manufacturer_path(manufacturer) %></td>
-        <td style="align-items: center;" class="badge badge-dark"><%= link_to 'Destroy', manufacturer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td style="text-align:center"><%= link_to 'Show', manufacturer, :class => "badge badge-dark" %>
+            <%= link_to 'Edit', edit_manufacturer_path(manufacturer), :class => "badge badge-dark" %>
+            <%= link_to 'Destroy', manufacturer, method: :delete, data: { confirm: 'Are you sure?' }, :class => "badge badge-dark" %></td>
       </tr>
     <% end %>
   </tbody>

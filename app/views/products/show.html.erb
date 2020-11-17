@@ -1,35 +1,40 @@
 <p id="notice"><%= notice %></p>
+<div class="container">
+<div class="table-responsive">
+<table class="table table-bordered">
+<tbody style="text-align:center">
 
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
-
-<p>
-  <strong>Barcode:</strong>
-  <%= @product.barcode %>
-</p>
-
-<p>
-  <strong>Manufacturer:</strong>
-  <%= @product.manufacturer_id %>
-  <%= link_to 'Show', controller: "manufacturers", action: "show", id: @product.manufacturer_id %>
-</p>
-
+<tr>
+<th style="text-align:center; width: 50px;">Product name</th>
+<th style="text-align:center; width: 50px;">Product #</th>
+<th style="text-align:center; width: 50px;">Product barcode</th>
+<th style="text-align:center; width: 50px;">Manufacturer #</th>
+<th style="text-align:center; width: 50px;">Cve</th>
+<th style="text-align:center; width: 100px;">Severity</th>
+<th style="text-align:center; width: 200px;">Description</th>
+<th style="text-align:center; width: 200px;">Advisories</th>
+</tr>
 <% @product.security_and_privacy_vulnerabilities.each do |security_and_privacy_vulnerability| %>
   <tr>
+    <td><%= @product.name %></td>
     <td><%= security_and_privacy_vulnerability.product_id %></td>
+    <td><%= @product.barcode %></td>
+    <td><%= @product.manufacturer_id %>
+    <%= link_to 'Show', controller: "manufacturers", action: "show", id: @product.manufacturer_id %>
+    </td>
     <td><%= security_and_privacy_vulnerability.cve_id %></td>
     <td><%= security_and_privacy_vulnerability.severity %></td>
     <td><%= security_and_privacy_vulnerability.description %></td>
     <td><%= security_and_privacy_vulnerability.advisories %></td>
     <br><br>
-
-    <td><%= link_to 'Show', security_and_privacy_vulnerability %></td>
-    <td><%= link_to 'Edit', edit_security_and_privacy_vulnerability_path(security_and_privacy_vulnerability) %></td>
-    <td><%= link_to 'Destroy', security_and_privacy_vulnerability, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
   <br><br>
+  </tbody>
 <% end %>
+</table>
+</div>
+
+
 <%= link_to 'Edit', edit_product_path(@product), :class => "btn btn-dark btn-sm" %> 
 <%= link_to 'Back', products_path, :class => "btn btn-dark btn-sm" %>
+</div>

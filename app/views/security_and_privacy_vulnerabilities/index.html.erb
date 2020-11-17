@@ -6,12 +6,12 @@
 <table class="table">
   <thead class="thead-dark">
     <tr>
-      <th style="text-align:center">Product</th>
-      <th style="text-align:center">Cve</th>
-      <th style="text-align:center">Severity</th>
-      <th style="text-align:center">Description</th>
-      <th style="text-align:center">Advisories</th>
-      <th style="text-align:center" colspan="0">Controllers</th>
+      <th style="text-align:center; width: 50px;">Product</th>
+      <th style="text-align:center; width: 50px;">Cve</th>
+      <th style="text-align:center; width: 100px;">Severity</th>
+      <th style="text-align:center; width: 200px;">Description</th>
+      <th style="text-align:center; width: 200px;">Advisories</th>
+      <th colspan="0" style="text-align:center; width: 400px;">Controllers</th>
     </tr>
   </thead>
 
@@ -23,9 +23,9 @@
         <td style="text-align:center"><%= security_and_privacy_vulnerability.severity %></td>
         <td style="text-align:center"><%= security_and_privacy_vulnerability.description %></td>
         <td style="text-align:center"><%= security_and_privacy_vulnerability.advisories %></td>
-        <td style="text-align:center" class="badge badge-dark"><%= link_to 'Show', security_and_privacy_vulnerability %></td>
-        <td style="text-align:center" class="badge badge-dark"><%= link_to 'Edit', edit_security_and_privacy_vulnerability_path(security_and_privacy_vulnerability) %></td>
-        <td style="text-align:center" class="badge badge-dark"><%= link_to 'Destroy', security_and_privacy_vulnerability, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td style="text-align:center"><%= link_to 'Show', security_and_privacy_vulnerability, :class => "badge badge-dark" %>
+        <%= link_to 'Edit', edit_security_and_privacy_vulnerability_path(security_and_privacy_vulnerability) , :class => "badge badge-dark"%>
+        <%= link_to 'Destroy', security_and_privacy_vulnerability, method: :delete, data: { confirm: 'Are you sure?' }, :class => "badge badge-dark" %></td>
       </tr>
     <% end %>
   </tbody>
