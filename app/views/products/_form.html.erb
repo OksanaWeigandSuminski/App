@@ -11,22 +11,29 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+  <div class="form-group row">
+    <%= form.label :name, :class => "col-sm-2 col-form-label" %>
+    <div class="col-sm-10">
+    <%= form.text_field :name, :class => "form-control"%>
+  </div>
   </div>
 
-  <div class="field">
-    <%= form.label :barcode %>
-    <%= form.number_field :barcode %>
+  <div class="form-group row">
+    <%= form.label :barcode, :class => "col-sm-2 col-form-label" %>
+    <div class="col-sm-10">
+    <%= form.number_field :barcode, :class => "form-control" %>
+  </div>
   </div>
 
-  <div class="field">
-    <%= form.label :manufacturer_id %>
-    <%= form.number_field :manufacturer_id %>
+  <div class="form-group row">
+    <%= form.label :manufacturer_id, :class => "col-sm-2 col-form-label" %>
+    <div class="col-sm-10">
+    <%= form.number_field :manufacturer_id, :class => "form-control" %>
   </div>
+  </div>
+<br>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit%>
   </div>
 <% end %>

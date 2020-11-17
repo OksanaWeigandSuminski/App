@@ -11,29 +11,39 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :product_id %>
-    <%= form.number_field :product_id %>
+  <div class="form-group row">
+    <%= form.label :product_id, :class => "col-sm-2 col-form-label" %>
+    <div class="col-sm-10">
+    <%= form.number_field :product_id, :class => "form-control"%>
+  </div>
   </div>
 
-  <div class="field">
-    <%= form.label :cve_id %>
-    <%= form.text_field :cve_id %>
+  <div class="form-group row">
+    <%= form.label :cve_id, :class => "col-sm-2 col-form-label" %>
+    <div class="col-sm-10">
+    <%= form.text_field :cve_id, :class => "form-control" %>
+  </div>
   </div>
 
-  <div class="field">
-    <%= form.label :severity %>
-    <%= form.text_field :severity %>
+  <div class="form-group row">
+    <%= form.label :severity, :class => "col-sm-2 col-form-label" %>
+    <div class="col-sm-10">
+    <%= form.text_field :severity, :class => "form-control" %>
+  </div>
   </div>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description %>
+  <div class="form-group row">
+    <%= form.label :description, :class => "col-sm-2 col-form-label" %>
+    <div class="col-sm-10">
+    <%= form.text_area :description, :class => "form-control" %>
+  </div>
   </div>
 
-  <div class="field">
-    <%= form.label :advisories %>
-    <%= form.text_area :advisories %>
+  <div class="form-group row">
+    <%= form.label :advisories, :class => "col-sm-2 col-form-label" %>
+    <div class="col-sm-10">
+    <%= form.text_area :advisories, :class => "form-control" %>
+  </div>
   </div>
 
   <div class="actions">
