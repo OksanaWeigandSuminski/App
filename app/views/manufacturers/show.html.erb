@@ -1,56 +1,59 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @manufacturer.name %>
-</p>
+<div class="container">
+<h1 class="display-3">Manufacturers</h1>
+<div class="row">
+<div class="col-md-4">
 
-<p>
-  <strong>Street address:</strong>
-  <%= @manufacturer.street_address %>
-</p>
+<address>
+<h2><strong><%= @manufacturer.name %></strong></h2>
 
-<p>
-  <strong>City:</strong>
-  <%= @manufacturer.city %>
-</p>
+<%= @manufacturer.street_address %><br>
 
-<p>
-  <strong>State:</strong>
-  <%= @manufacturer.state %>
-</p>
+<%= @manufacturer.city %>
 
-<p>
-  <strong>Postal code:</strong>
-  <%= @manufacturer.postal_code %>
-</p>
+<%= @manufacturer.state %>
 
-<p>
-  <strong>Country or region:</strong>
-  <%= @manufacturer.country_or_region %>
-</p>
+<%= @manufacturer.postal_code %><br>
 
-<p>
-  <strong>Phone:</strong>
-  <%= @manufacturer.phone %>
-</p>
+<%= @manufacturer.country_or_region %><br>
 
-<p>
-  <strong>Email:</strong>
-  <%= @manufacturer.email %>
-</p>
-<% @manufacturer.products.each do |product| %>
-  <tr>
-    <td><%= product.name %></td>
-    <td><%= product.barcode %></td>
-    <td><%= product.manufacturer_id %></td>
+<abbr title="Cell phone">Cell:</abbr>
+<%= @manufacturer.phone %><br>
+
+<abbr title="Email address">E.:</abbr>
+<a href="mailto:#"><%= @manufacturer.email %></a>
+</address>
+</div>
+</div>
+
+<div class="table-responsive">
+<table class="table table-bordered">
+<tbody style="text-align:center">
+
+<tr>
+  <th style="text-align:center">Product name</th>
+  <th style="text-align:center">Product barcode</th>
+  <th style="text-align:center">Manufacturer #</th>
+  <th colspan="0" style="text-align:center">Controllers</th>
+  </tr>
+  <% @manufacturer.products.each do |product| %>
+    <tr>
+    <td style="text-align:center"><%= product.name %></td>
+    <td style="text-align:center"><%= product.barcode %></td>
+    <td style="text-align:center"><%= product.manufacturer_id %></td>
     <br><br>
-    <td><%= link_to 'Show', product %></td>
-    <td><%= link_to 'Edit', edit_product_path(product) %></td>
-    <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td style="text-align:center"><%= link_to 'Show', product, :class => "badge badge-dark" %>
+    <%= link_to 'Edit', edit_product_path(product), :class => "badge badge-dark" %>
+    <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, :class => "badge badge-dark" %></td>
   </tr>
   <br><br>
+  </tbody>
 <% end %>
+</table>
+</div>
+
 
 <%= link_to 'Edit', edit_manufacturer_path(@manufacturer), :class => "btn btn-dark btn-sm" %>
 <%= link_to 'Back', manufacturers_path, :class => "btn btn-dark btn-sm" %>
+</div>
