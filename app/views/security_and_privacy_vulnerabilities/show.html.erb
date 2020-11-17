@@ -1,35 +1,27 @@
 <p id="notice"><%= notice %></p>
 <div class="container">
+<h1 class="display-3">Security And Privacy Vulnerabilities</h1>
 <div class="table-responsive">
 <table class="table table-bordered">
 <tbody style="text-align:center">
 
 <tr>
+
 <th style="text-align:center; width: 50px;">Product #</th>
 <th style="text-align:center; width: 50px;">Cve</th>
-
-
-<p>
-  <strong>Severity:</strong>
-  <%= @security_and_privacy_vulnerability.severity %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @security_and_privacy_vulnerability.description %>
-</p>
-
-<p>
-  <strong>Advisories:</strong>
-  <%= @security_and_privacy_vulnerability.advisories %>
-</p>
+<th style="text-align:center; width: 100px;">Severity</th>
+<th style="text-align:center; width: 200px;">Description</th>
+<th style="text-align:center; width: 200px;">Advisories</th>
+</tr>
 
 <tr>
+
 <td><%= @security_and_privacy_vulnerability.product_id %></td>
 <td><%= @security_and_privacy_vulnerability.cve_id %></td>
+<td><%= @security_and_privacy_vulnerability.severity %></td>
+<td><%= @security_and_privacy_vulnerability.description %></td>
+<td><%= @security_and_privacy_vulnerability.advisories %></td>
 
-
-</tr>
 </tr>
 </tbody>
 </table>
