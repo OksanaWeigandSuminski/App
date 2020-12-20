@@ -1,0 +1,59 @@
+I, [2020-12-20T17:50:12.671038 #26809]  INFO -- : [2cac9f39-f14b-4bc4-9528-c33aeb85c7ab] Started GET "/home/index" for 127.0.0.1 at 2020-12-20 17:50:12 -0500
+I, [2020-12-20T17:50:12.671833 #26809]  INFO -- : [2cac9f39-f14b-4bc4-9528-c33aeb85c7ab] Processing by HomeController#index as HTML
+I, [2020-12-20T17:50:12.679154 #26809]  INFO -- : [2cac9f39-f14b-4bc4-9528-c33aeb85c7ab]   Rendering home/index.html.erb within layouts/application
+I, [2020-12-20T17:50:12.679995 #26809]  INFO -- : [2cac9f39-f14b-4bc4-9528-c33aeb85c7ab]   Rendered home/index.html.erb within layouts/application (0.7ms)
+I, [2020-12-20T17:50:12.681320 #26809]  INFO -- : [2cac9f39-f14b-4bc4-9528-c33aeb85c7ab] Completed 500 Internal Server Error in 9ms
+F, [2020-12-20T17:50:12.681918 #26809] FATAL -- : [2cac9f39-f14b-4bc4-9528-c33aeb85c7ab]   
+F, [2020-12-20T17:50:12.681965 #26809] FATAL -- : [2cac9f39-f14b-4bc4-9528-c33aeb85c7ab] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+F, [2020-12-20T17:50:12.682081 #26809] FATAL -- : [2cac9f39-f14b-4bc4-9528-c33aeb85c7ab]     4:     <title>Cyberapp</title>
+[2cac9f39-f14b-4bc4-9528-c33aeb85c7ab]     5:     <%= csp_meta_tag %>
+[2cac9f39-f14b-4bc4-9528-c33aeb85c7ab]     6: 
+[2cac9f39-f14b-4bc4-9528-c33aeb85c7ab]     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+[2cac9f39-f14b-4bc4-9528-c33aeb85c7ab]     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+[2cac9f39-f14b-4bc4-9528-c33aeb85c7ab]     9:     <%= csrf_meta_tags %>
+[2cac9f39-f14b-4bc4-9528-c33aeb85c7ab]    10:   </head>
+F, [2020-12-20T17:50:12.682117 #26809] FATAL -- : [2cac9f39-f14b-4bc4-9528-c33aeb85c7ab]   
+F, [2020-12-20T17:50:12.682152 #26809] FATAL -- : [2cac9f39-f14b-4bc4-9528-c33aeb85c7ab] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3454945661827378638_70116630686700'
+I, [2020-12-20T17:50:12.752378 #26809]  INFO -- : [c41bf33a-d036-41af-b1f5-d133fd590912] Started GET "/favicon.ico" for 127.0.0.1 at 2020-12-20 17:50:12 -0500
+F, [2020-12-20T17:50:12.752844 #26809] FATAL -- : [c41bf33a-d036-41af-b1f5-d133fd590912]   
+F, [2020-12-20T17:50:12.752893 #26809] FATAL -- : [c41bf33a-d036-41af-b1f5-d133fd590912] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2020-12-20T17:50:12.752927 #26809] FATAL -- : [c41bf33a-d036-41af-b1f5-d133fd590912]   
+F, [2020-12-20T17:50:12.752964 #26809] FATAL -- : [c41bf33a-d036-41af-b1f5-d133fd590912] actionpack (5.2.4.4) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[c41bf33a-d036-41af-b1f5-d133fd590912] actionpack (5.2.4.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[c41bf33a-d036-41af-b1f5-d133fd590912] railties (5.2.4.4) lib/rails/rack/logger.rb:38:in `call_app'
+[c41bf33a-d036-41af-b1f5-d133fd590912] railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `block in call'
+[c41bf33a-d036-41af-b1f5-d133fd590912] activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[c41bf33a-d036-41af-b1f5-d133fd590912] activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+[c41bf33a-d036-41af-b1f5-d133fd590912] activesupport (5.2.4.4) lib/active_support/tagged_logging.rb:71:in `tagged'
+[c41bf33a-d036-41af-b1f5-d133fd590912] railties (5.2.4.4) lib/rails/rack/logger.rb:26:in `call'
+[c41bf33a-d036-41af-b1f5-d133fd590912] actionpack (5.2.4.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[c41bf33a-d036-41af-b1f5-d133fd590912] actionpack (5.2.4.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[c41bf33a-d036-41af-b1f5-d133fd590912] rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+[c41bf33a-d036-41af-b1f5-d133fd590912] rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+[c41bf33a-d036-41af-b1f5-d133fd590912] activesupport (5.2.4.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[c41bf33a-d036-41af-b1f5-d133fd590912] actionpack (5.2.4.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[c41bf33a-d036-41af-b1f5-d133fd590912] rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+[c41bf33a-d036-41af-b1f5-d133fd590912] railties (5.2.4.4) lib/rails/engine.rb:524:in `call'
+[c41bf33a-d036-41af-b1f5-d133fd590912] puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+[c41bf33a-d036-41af-b1f5-d133fd590912] puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+[c41bf33a-d036-41af-b1f5-d133fd590912] puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+[c41bf33a-d036-41af-b1f5-d133fd590912] puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+[c41bf33a-d036-41af-b1f5-d133fd590912] puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+I, [2020-12-20T17:50:18.563208 #26809]  INFO -- : [022e7f40-b2fa-4a6e-8bf0-ce25ad6ac46b] Started GET "/home/index" for 127.0.0.1 at 2020-12-20 17:50:18 -0500
+I, [2020-12-20T17:50:18.563799 #26809]  INFO -- : [022e7f40-b2fa-4a6e-8bf0-ce25ad6ac46b] Processing by HomeController#index as HTML
+I, [2020-12-20T17:50:18.564707 #26809]  INFO -- : [022e7f40-b2fa-4a6e-8bf0-ce25ad6ac46b]   Rendering home/index.html.erb within layouts/application
+I, [2020-12-20T17:50:18.564919 #26809]  INFO -- : [022e7f40-b2fa-4a6e-8bf0-ce25ad6ac46b]   Rendered home/index.html.erb within layouts/application (0.1ms)
+I, [2020-12-20T17:50:18.565764 #26809]  INFO -- : [022e7f40-b2fa-4a6e-8bf0-ce25ad6ac46b] Completed 500 Internal Server Error in 2ms
+F, [2020-12-20T17:50:18.566339 #26809] FATAL -- : [022e7f40-b2fa-4a6e-8bf0-ce25ad6ac46b]   
+F, [2020-12-20T17:50:18.566385 #26809] FATAL -- : [022e7f40-b2fa-4a6e-8bf0-ce25ad6ac46b] ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+F, [2020-12-20T17:50:18.566488 #26809] FATAL -- : [022e7f40-b2fa-4a6e-8bf0-ce25ad6ac46b]     4:     <title>Cyberapp</title>
+[022e7f40-b2fa-4a6e-8bf0-ce25ad6ac46b]     5:     <%= csp_meta_tag %>
+[022e7f40-b2fa-4a6e-8bf0-ce25ad6ac46b]     6: 
+[022e7f40-b2fa-4a6e-8bf0-ce25ad6ac46b]     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+[022e7f40-b2fa-4a6e-8bf0-ce25ad6ac46b]     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+[022e7f40-b2fa-4a6e-8bf0-ce25ad6ac46b]     9:     <%= csrf_meta_tags %>
+[022e7f40-b2fa-4a6e-8bf0-ce25ad6ac46b]    10:   </head>
+F, [2020-12-20T17:50:18.566523 #26809] FATAL -- : [022e7f40-b2fa-4a6e-8bf0-ce25ad6ac46b]   
+F, [2020-12-20T17:50:18.566558 #26809] FATAL -- : [022e7f40-b2fa-4a6e-8bf0-ce25ad6ac46b] app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___3454945661827378638_70116630686700'
