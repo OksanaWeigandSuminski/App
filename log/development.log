@@ -44822,3 +44822,21 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 334ms (Views: 328.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/products" for ::1 at 2020-12-21 18:28:53 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 391ms (Views: 377.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/home/index" for ::1 at 2020-12-21 18:28:55 -0500
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 38ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
