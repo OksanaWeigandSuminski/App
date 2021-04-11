@@ -48378,3 +48378,61 @@ Processing by SecurityAndPrivacyVulnerabilitiesController#index as HTML
 Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.4ms | Allocations: 27034)
 
 
+Started GET "/security_and_privacy_vulnerabilities" for ::1 at 2021-04-11 02:51:30 -0400
+Processing by SecurityAndPrivacyVulnerabilitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering security_and_privacy_vulnerabilities/index.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.6ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities"[0m
+  ↳ app/views/security_and_privacy_vulnerabilities/index.html.erb:19
+  Rendered security_and_privacy_vulnerabilities/index.html.erb within layouts/application (Duration: 28.2ms | Allocations: 2840)
+  Rendered layout layouts/application.html.erb (Duration: 61.3ms | Allocations: 28665)
+Completed 200 OK in 63ms (Views: 61.9ms | ActiveRecord: 20.2ms | Allocations: 29199)
+
+
+Started GET "/products" for ::1 at 2021-04-11 02:51:32 -0400
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 675)
+  Rendered layout layouts/application.html.erb (Duration: 57.4ms | Allocations: 26507)
+Completed 200 OK in 59ms (Views: 57.6ms | ActiveRecord: 0.6ms | Allocations: 27062)
+
+
+Started GET "/products/1" for ::1 at 2021-04-11 02:51:35 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:70:in `set_product'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.4ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities" WHERE "security_and_privacy_vulnerabilities"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/views/products/show.html.erb:18
+  Rendered products/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1400)
+  Rendered layout layouts/application.html.erb (Duration: 31.1ms | Allocations: 27227)
+Completed 200 OK in 35ms (Views: 31.4ms | ActiveRecord: 1.0ms | Allocations: 28264)
+
+
+Started GET "/products" for ::1 at 2021-04-11 03:03:21 -0400
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (Duration: 31.4ms | Allocations: 2773)
+  Rendered layout layouts/application.html.erb (Duration: 59.7ms | Allocations: 28598)
+Completed 200 OK in 61ms (Views: 60.3ms | ActiveRecord: 20.8ms | Allocations: 29167)
+
+
+Started GET "/products" for ::1 at 2021-04-11 03:03:23 -0400
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 666)
+  Rendered layout layouts/application.html.erb (Duration: 30.7ms | Allocations: 26491)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.3ms | Allocations: 27050)
+
+
