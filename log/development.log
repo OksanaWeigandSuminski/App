@@ -47825,3 +47825,556 @@ ArgumentError: wrong number of arguments (given 2, expected 3)
 	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
 	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
 	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2021-04-11 00:33:46 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 2 pending migrations:
+
+20210411035910_add_service_name_to_active_storage_blobs.active_storage.rb
+20210411035911_create_active_storage_variant_records.active_storage.rb
+
+
+):
+  
+activerecord (6.1.3.1) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.3.1) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.3.1) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.3.1) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+
+ArgumentError: wrong number of arguments (given 2, expected 3)
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/actionview-6.1.3.1/lib/action_view/base.rb:230:in `initialize'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/web-console-3.7.0/lib/web_console/template.rb:21:in `new'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/web-console-3.7.0/lib/web_console/template.rb:21:in `render'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/web-console-3.7.0/lib/web_console/middleware.rb:37:in `block in call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `catch'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/actionpack-6.1.3.1/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/railties-6.1.3.1/lib/rails/rack/logger.rb:37:in `call_app'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/railties-6.1.3.1/lib/rails/rack/logger.rb:26:in `block in call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/activesupport-6.1.3.1/lib/active_support/tagged_logging.rb:99:in `block in tagged'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/activesupport-6.1.3.1/lib/active_support/tagged_logging.rb:37:in `tagged'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/activesupport-6.1.3.1/lib/active_support/tagged_logging.rb:99:in `tagged'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/railties-6.1.3.1/lib/rails/rack/logger.rb:26:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/sprockets-rails-3.2.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/actionpack-6.1.3.1/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/actionpack-6.1.3.1/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/activesupport-6.1.3.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/actionpack-6.1.3.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/actionpack-6.1.3.1/lib/action_dispatch/middleware/static.rb:24:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/actionpack-6.1.3.1/lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/railties-6.1.3.1/lib/rails/engine.rb:539:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2292548107226797980)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddServiceNameToActiveStorageBlobs (20210411035910)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2292548107226797980)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2292548107226797980)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddServiceNameToActiveStorageBlobs (20210411035910)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2292548107226797980)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2292548107226797980)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddServiceNameToActiveStorageBlobs (20210411035910)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2292548107226797980)[0m
+Started GET "/" for ::1 at 2021-04-11 00:44:03 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 3 pending migrations:
+
+20210411035910_add_service_name_to_active_storage_blobs.active_storage.rb
+20210411035911_create_active_storage_variant_records.active_storage.rb
+20210411043600_create_active_storage_tables.active_storage.rb
+
+
+):
+  
+activerecord (6.1.3.1) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.3.1) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.3.1) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.3.1) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+
+ArgumentError: wrong number of arguments (given 2, expected 3)
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/actionview-6.1.3.1/lib/action_view/base.rb:230:in `initialize'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/web-console-3.7.0/lib/web_console/template.rb:21:in `new'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/web-console-3.7.0/lib/web_console/template.rb:21:in `render'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/web-console-3.7.0/lib/web_console/middleware.rb:37:in `block in call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `catch'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/actionpack-6.1.3.1/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/railties-6.1.3.1/lib/rails/rack/logger.rb:37:in `call_app'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/railties-6.1.3.1/lib/rails/rack/logger.rb:26:in `block in call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/activesupport-6.1.3.1/lib/active_support/tagged_logging.rb:99:in `block in tagged'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/activesupport-6.1.3.1/lib/active_support/tagged_logging.rb:37:in `tagged'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/activesupport-6.1.3.1/lib/active_support/tagged_logging.rb:99:in `tagged'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/railties-6.1.3.1/lib/rails/rack/logger.rb:26:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/sprockets-rails-3.2.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/actionpack-6.1.3.1/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/actionpack-6.1.3.1/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/activesupport-6.1.3.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/actionpack-6.1.3.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/actionpack-6.1.3.1/lib/action_dispatch/middleware/static.rb:24:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/actionpack-6.1.3.1/lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/railties-6.1.3.1/lib/rails/engine.rb:539:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2292548107226797980)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddServiceNameToActiveStorageBlobs (20210411035910)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2292548107226797980)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2292548107226797980)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2292548107226797980)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2292548107226797980)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2292548107226797980)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2021-04-11 01:15:42 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.4ms | Allocations: 300)
+Completed 200 OK in 23ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 2788)
+
+
+Started GET "/products" for ::1 at 2021-04-11 01:15:48 -0400
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (6.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (Duration: 13.3ms | Allocations: 1954)
+  Rendered layout layouts/application.html.erb (Duration: 498.1ms | Allocations: 346662)
+Completed 200 OK in 517ms (Views: 494.6ms | ActiveRecord: 6.9ms | Allocations: 352275)
+
+
+Started GET "/products" for ::1 at 2021-04-11 01:15:53 -0400
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (Duration: 13.7ms | Allocations: 561)
+  Rendered layout layouts/application.html.erb (Duration: 69.8ms | Allocations: 26391)
+Completed 200 OK in 89ms (Views: 86.9ms | ActiveRecord: 0.3ms | Allocations: 26939)
+
+
+Started GET "/manufacturers" for ::1 at 2021-04-11 01:15:55 -0400
+Processing by ManufacturersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (6.6ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:22
+  Rendered manufacturers/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 951)
+  Rendered layout layouts/application.html.erb (Duration: 45.7ms | Allocations: 26786)
+Completed 200 OK in 55ms (Views: 41.1ms | ActiveRecord: 6.6ms | Allocations: 29808)
+
+
+Started GET "/security_and_privacy_vulnerabilities" for ::1 at 2021-04-11 01:15:56 -0400
+Processing by SecurityAndPrivacyVulnerabilitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering security_and_privacy_vulnerabilities/index.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (2.1ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities"[0m
+  ↳ app/views/security_and_privacy_vulnerabilities/index.html.erb:19
+  Rendered security_and_privacy_vulnerabilities/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 902)
+  Rendered layout layouts/application.html.erb (Duration: 48.0ms | Allocations: 26737)
+Completed 200 OK in 59ms (Views: 48.9ms | ActiveRecord: 2.1ms | Allocations: 28961)
+
+
+Started GET "/home/index" for ::1 at 2021-04-11 01:16:01 -0400
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 239)
+  Rendered layout layouts/application.html.erb (Duration: 37.5ms | Allocations: 26071)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.0ms | Allocations: 27169)
+
+
+Started GET "/products" for ::1 at 2021-04-11 01:16:03 -0400
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (Duration: 45.4ms | Allocations: 556)
+  Rendered layout layouts/application.html.erb (Duration: 74.8ms | Allocations: 26389)
+Completed 200 OK in 77ms (Views: 75.1ms | ActiveRecord: 0.4ms | Allocations: 26933)
+
+
+Started GET "/products/new" for ::1 at 2021-04-11 01:16:32 -0400
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 40.1ms | Allocations: 7771)
+  Rendered products/new.html.erb within layouts/application (Duration: 47.4ms | Allocations: 8123)
+  Rendered layout layouts/application.html.erb (Duration: 85.5ms | Allocations: 33950)
+Completed 200 OK in 100ms (Views: 86.8ms | ActiveRecord: 5.5ms | Allocations: 38106)
+
+
+Started GET "/products" for ::1 at 2021-04-11 01:16:38 -0400
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 550)
+  Rendered layout layouts/application.html.erb (Duration: 46.3ms | Allocations: 26375)
+Completed 200 OK in 49ms (Views: 46.7ms | ActiveRecord: 0.5ms | Allocations: 26920)
+
+
+Started GET "/manufacturers" for ::1 at 2021-04-11 01:16:39 -0400
+Processing by ManufacturersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.7ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:22
+  Rendered manufacturers/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 571)
+  Rendered layout layouts/application.html.erb (Duration: 40.9ms | Allocations: 26403)
+Completed 200 OK in 43ms (Views: 41.1ms | ActiveRecord: 0.7ms | Allocations: 26930)
+
+
+Started GET "/manufacturers/new" for ::1 at 2021-04-11 01:16:40 -0400
+Processing by ManufacturersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering manufacturers/new.html.erb within layouts/application
+  Rendered manufacturers/_form.html.erb (Duration: 8.9ms | Allocations: 2767)
+  Rendered manufacturers/new.html.erb within layouts/application (Duration: 10.6ms | Allocations: 3101)
+  Rendered layout layouts/application.html.erb (Duration: 41.0ms | Allocations: 28928)
+Completed 200 OK in 61ms (Views: 41.8ms | ActiveRecord: 7.2ms | Allocations: 35538)
+
+
+Started POST "/manufacturers" for ::1 at 2021-04-11 01:16:45 -0400
+Processing by ManufacturersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t17AmmJCzSdUcoDHxYc/G7GABXfjQK9QuPabn7O8evF25OKDwqQ9MESSIs2xn9ofACu5cFB83goJwEX1DK0wgg==", "manufacturer"=>{"name"=>"IBM", "street_address"=>"123 Sterling Pl.", "city"=>"New York", "state"=>"NY", "postal_code"=>"22333", "country_or_region"=>"United States", "phone"=>"1234567889", "email"=>"tivoli@gmail.com"}, "commit"=>"Create Manufacturer"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/manufacturers_controller.rb:30:in `block in create'
+  [1m[36mManufacturer Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "manufacturers" WHERE "manufacturers"."name" = $1 LIMIT $2[0m  [["name", "IBM"], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:30:in `block in create'
+  [1m[36mManufacturer Create (8.3ms)[0m  [1m[32mINSERT INTO "manufacturers" ("name", "street_address", "city", "state", "postal_code", "country_or_region", "phone", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "IBM"], ["street_address", "123 Sterling Pl."], ["city", "New York"], ["state", "NY"], ["postal_code", 22333], ["country_or_region", "United States"], ["phone", 1234567889], ["email", "tivoli@gmail.com"], ["created_at", "2021-04-11 05:16:45.264377"], ["updated_at", "2021-04-11 05:16:45.264377"]]
+  ↳ app/controllers/manufacturers_controller.rb:30:in `block in create'
+  [1m[36mTRANSACTION (7.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/manufacturers_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/manufacturers/1
+Completed 302 Found in 34ms (ActiveRecord: 17.0ms | Allocations: 4510)
+
+
+Started GET "/manufacturers/1" for ::1 at 2021-04-11 01:16:45 -0400
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mManufacturer Load (0.5ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67:in `set_manufacturer'
+  Rendering layout layouts/application.html.erb
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."manufacturer_id" = $1[0m  [["manufacturer_id", 1]]
+  ↳ app/views/manufacturers/show.html.erb:40
+  Rendered manufacturers/show.html.erb within layouts/application (Duration: 40.8ms | Allocations: 8019)
+  Rendered layout layouts/application.html.erb (Duration: 107.4ms | Allocations: 33848)
+Completed 200 OK in 113ms (Views: 107.7ms | ActiveRecord: 1.1ms | Allocations: 35148)
+
+
+Started GET "/manufacturers" for ::1 at 2021-04-11 01:16:47 -0400
+Processing by ManufacturersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.4ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:22
+  Rendered manufacturers/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 696)
+  Rendered layout layouts/application.html.erb (Duration: 41.3ms | Allocations: 26522)
+Completed 200 OK in 43ms (Views: 41.8ms | ActiveRecord: 0.4ms | Allocations: 27051)
+
+
+Started GET "/products" for ::1 at 2021-04-11 01:16:49 -0400
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 554)
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 26386)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.3ms | Allocations: 26931)
+
+
+Started GET "/products/new" for ::1 at 2021-04-11 01:16:52 -0400
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 5.2ms | Allocations: 871)
+  Rendered products/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 959)
+  Rendered layout layouts/application.html.erb (Duration: 42.2ms | Allocations: 26784)
+Completed 200 OK in 45ms (Views: 43.2ms | ActiveRecord: 0.0ms | Allocations: 27339)
+
+
+Started POST "/products" for ::1 at 2021-04-11 01:17:12 -0400
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nirdBbQJXH9HFNGKP63sgP3/ZaQMyzJ6Ah6+AqyVxiCle0v9+YDQhbfNCD5Pm3Em6PNHdUepSP2dGVP5KfKycw==", "product"=>{"name"=>"Watson", "barcode"=>"4235617898", "manufacturer_id"=>"1"}, "commit"=>"Create Product"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:33:in `block in create'
+  [1m[36mProduct Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."name" = $1 LIMIT $2[0m  [["name", "Watson"], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:33:in `block in create'
+  [1m[36mManufacturer Load (0.4ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:33:in `block in create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:33:in `block in create'
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 1.5ms | Allocations: 8227)
+
+
+  
+ActiveModel::RangeError (4235617898 is out of range for ActiveModel::Type::Integer with limit 4 bytes):
+  
+app/controllers/products_controller.rb:33:in `block in create'
+app/controllers/products_controller.rb:32:in `create'
+
+ArgumentError: wrong number of arguments (given 2, expected 3)
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/actionview-6.1.3.1/lib/action_view/base.rb:230:in `initialize'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/web-console-3.7.0/lib/web_console/template.rb:21:in `new'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/web-console-3.7.0/lib/web_console/template.rb:21:in `render'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/web-console-3.7.0/lib/web_console/middleware.rb:37:in `block in call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `catch'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/web-console-3.7.0/lib/web_console/middleware.rb:20:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/actionpack-6.1.3.1/lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/railties-6.1.3.1/lib/rails/rack/logger.rb:37:in `call_app'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/railties-6.1.3.1/lib/rails/rack/logger.rb:26:in `block in call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/activesupport-6.1.3.1/lib/active_support/tagged_logging.rb:99:in `block in tagged'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/activesupport-6.1.3.1/lib/active_support/tagged_logging.rb:37:in `tagged'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/activesupport-6.1.3.1/lib/active_support/tagged_logging.rb:99:in `tagged'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/railties-6.1.3.1/lib/rails/rack/logger.rb:26:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/sprockets-rails-3.2.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/actionpack-6.1.3.1/lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/actionpack-6.1.3.1/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/rack-2.2.3/lib/rack/method_override.rb:24:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/rack-2.2.3/lib/rack/runtime.rb:22:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/activesupport-6.1.3.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/actionpack-6.1.3.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/actionpack-6.1.3.1/lib/action_dispatch/middleware/static.rb:24:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/rack-2.2.3/lib/rack/sendfile.rb:110:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/actionpack-6.1.3.1/lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/railties-6.1.3.1/lib/rails/engine.rb:539:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/puma-3.12.6/lib/puma/configuration.rb:227:in `call'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/puma-3.12.6/lib/puma/server.rb:706:in `handle_request'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/puma-3.12.6/lib/puma/server.rb:476:in `process_client'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/puma-3.12.6/lib/puma/server.rb:334:in `block in run'
+	from /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/puma-3.12.6/lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/products/new" for ::1 at 2021-04-11 01:17:15 -0400
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 3.2ms | Allocations: 986)
+  Rendered products/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1080)
+  Rendered layout layouts/application.html.erb (Duration: 50.8ms | Allocations: 27008)
+Completed 200 OK in 53ms (Views: 51.6ms | ActiveRecord: 0.0ms | Allocations: 27685)
+
+
+Started POST "/products" for ::1 at 2021-04-11 01:17:21 -0400
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QaeIyw2BMdtpktvkaRLwA3soE+BnOJUN8PcWos5eAkxRsnaVoLoxn45cCypElIXEX5jRwEpAA2PSqXh28USMtA==", "product"=>{"name"=>"Watson", "barcode"=>"1111111111", "manufacturer_id"=>"1"}, "commit"=>"Create Product"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:33:in `block in create'
+  [1m[36mProduct Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "products" WHERE "products"."name" = $1 LIMIT $2[0m  [["name", "Watson"], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:33:in `block in create'
+  [1m[36mManufacturer Load (0.4ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:33:in `block in create'
+  [1m[36mProduct Create (1.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "barcode", "manufacturer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Watson"], ["barcode", 1111111111], ["manufacturer_id", 1], ["created_at", "2021-04-11 05:17:21.849883"], ["updated_at", "2021-04-11 05:17:21.849883"]]
+  ↳ app/controllers/products_controller.rb:33:in `block in create'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:33:in `block in create'
+Redirected to http://localhost:3000/products/1
+Completed 302 Found in 21ms (ActiveRecord: 3.8ms | Allocations: 4173)
+
+
+Started GET "/products/1" for ::1 at 2021-04-11 01:17:21 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:70:in `set_product'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.4ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities" WHERE "security_and_privacy_vulnerabilities"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/views/products/show.html.erb:18
+  Rendered products/show.html.erb within layouts/application (Duration: 14.3ms | Allocations: 4342)
+  Rendered layout layouts/application.html.erb (Duration: 58.9ms | Allocations: 30171)
+Completed 200 OK in 65ms (Views: 57.7ms | ActiveRecord: 3.1ms | Allocations: 31431)
+
+
+Started GET "/products" for ::1 at 2021-04-11 01:17:23 -0400
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 673)
+  Rendered layout layouts/application.html.erb (Duration: 57.7ms | Allocations: 26498)
+Completed 200 OK in 60ms (Views: 58.7ms | ActiveRecord: 0.3ms | Allocations: 27039)
+
+
+Started GET "/security_and_privacy_vulnerabilities" for ::1 at 2021-04-11 01:17:30 -0400
+Processing by SecurityAndPrivacyVulnerabilitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering security_and_privacy_vulnerabilities/index.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.5ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities"[0m
+  ↳ app/views/security_and_privacy_vulnerabilities/index.html.erb:19
+  Rendered security_and_privacy_vulnerabilities/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 559)
+  Rendered layout layouts/application.html.erb (Duration: 85.2ms | Allocations: 26392)
+Completed 200 OK in 87ms (Views: 85.8ms | ActiveRecord: 0.5ms | Allocations: 26920)
+
+
+Started GET "/security_and_privacy_vulnerabilities/new" for ::1 at 2021-04-11 01:17:31 -0400
+Processing by SecurityAndPrivacyVulnerabilitiesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering security_and_privacy_vulnerabilities/new.html.erb within layouts/application
+  Rendered security_and_privacy_vulnerabilities/_form.html.erb (Duration: 5.4ms | Allocations: 2211)
+  Rendered security_and_privacy_vulnerabilities/new.html.erb within layouts/application (Duration: 12.4ms | Allocations: 2549)
+  Rendered layout layouts/application.html.erb (Duration: 50.4ms | Allocations: 28376)
+Completed 200 OK in 62ms (Views: 51.6ms | ActiveRecord: 2.7ms | Allocations: 32806)
+
+
+Started POST "/security_and_privacy_vulnerabilities" for ::1 at 2021-04-11 01:17:46 -0400
+Processing by SecurityAndPrivacyVulnerabilitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gdxfIqoFK/W5+eFfPUKn1358hZNsAdGRsim1YyxSB7YRF6pTMNOiaNa0YZCbr6N6yVkmZGJ4XmlCzzraObyx1A==", "security_and_privacy_vulnerability"=>{"product_id"=>"1", "cve_id"=>"CVE-2015-3429", "severity"=>"High", "description"=>"hello", "advisories"=>"hello"}, "commit"=>"Create Security and privacy vulnerability"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/security_and_privacy_vulnerabilities_controller.rb:30:in `block in create'
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/security_and_privacy_vulnerabilities_controller.rb:30:in `block in create'
+  [1m[36mSecurityAndPrivacyVulnerability Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "security_and_privacy_vulnerabilities" WHERE "security_and_privacy_vulnerabilities"."cve_id" = $1 LIMIT $2[0m  [["cve_id", "CVE-2015-3429"], ["LIMIT", 1]]
+  ↳ app/controllers/security_and_privacy_vulnerabilities_controller.rb:30:in `block in create'
+  [1m[36mSecurityAndPrivacyVulnerability Create (1.1ms)[0m  [1m[32mINSERT INTO "security_and_privacy_vulnerabilities" ("product_id", "cve_id", "severity", "description", "advisories", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["product_id", 1], ["cve_id", "CVE-2015-3429"], ["severity", "High"], ["description", "hello"], ["advisories", "hello"], ["created_at", "2021-04-11 05:17:46.237160"], ["updated_at", "2021-04-11 05:17:46.237160"]]
+  ↳ app/controllers/security_and_privacy_vulnerabilities_controller.rb:30:in `block in create'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/security_and_privacy_vulnerabilities_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/security_and_privacy_vulnerabilities/1
+Completed 302 Found in 21ms (ActiveRecord: 4.7ms | Allocations: 5410)
+
+
+Started GET "/security_and_privacy_vulnerabilities/1" for ::1 at 2021-04-11 01:17:46 -0400
+Processing by SecurityAndPrivacyVulnerabilitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.5ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities" WHERE "security_and_privacy_vulnerabilities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/security_and_privacy_vulnerabilities_controller.rb:67:in `set_security_and_privacy_vulnerability'
+  Rendering layout layouts/application.html.erb
+  Rendering security_and_privacy_vulnerabilities/show.html.erb within layouts/application
+  Rendered security_and_privacy_vulnerabilities/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 317)
+  Rendered layout layouts/application.html.erb (Duration: 44.8ms | Allocations: 26146)
+Completed 200 OK in 51ms (Views: 46.0ms | ActiveRecord: 0.5ms | Allocations: 27403)
+
+
+Started GET "/security_and_privacy_vulnerabilities" for ::1 at 2021-04-11 01:17:48 -0400
+Processing by SecurityAndPrivacyVulnerabilitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering security_and_privacy_vulnerabilities/index.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.4ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities"[0m
+  ↳ app/views/security_and_privacy_vulnerabilities/index.html.erb:19
+  Rendered security_and_privacy_vulnerabilities/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 684)
+  Rendered layout layouts/application.html.erb (Duration: 35.5ms | Allocations: 26509)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.4ms | Allocations: 27034)
+
+
