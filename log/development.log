@@ -45950,3 +45950,1074 @@ Processing by SecurityAndPrivacyVulnerabilitiesController#index as HTML
 Completed 200 OK in 50ms (Views: 47.6ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/products" for ::1 at 2021-04-10 23:19:34 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (6.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 421ms (Views: 398.7ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/products" for ::1 at 2021-04-10 23:19:42 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 37ms (Views: 34.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/manufacturers" for ::1 at 2021-04-10 23:19:42 -0400
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (6.6ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:22
+  Rendered manufacturers/index.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 67ms (Views: 41.4ms | ActiveRecord: 19.3ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities" for ::1 at 2021-04-10 23:19:45 -0400
+Processing by SecurityAndPrivacyVulnerabilitiesController#index as HTML
+  Rendering security_and_privacy_vulnerabilities/index.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (6.2ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities"[0m
+  ↳ app/views/security_and_privacy_vulnerabilities/index.html.erb:19
+  Rendered security_and_privacy_vulnerabilities/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 65ms (Views: 51.1ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/home/index" for ::1 at 2021-04-10 23:19:48 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2021-04-10 23:19:49 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 39ms (Views: 36.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities" for ::1 at 2021-04-10 23:19:50 -0400
+Processing by SecurityAndPrivacyVulnerabilitiesController#index as HTML
+  Rendering security_and_privacy_vulnerabilities/index.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.4ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities"[0m
+  ↳ app/views/security_and_privacy_vulnerabilities/index.html.erb:19
+  Rendered security_and_privacy_vulnerabilities/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 67ms (Views: 65.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities/new" for ::1 at 2021-04-10 23:19:53 -0400
+Processing by SecurityAndPrivacyVulnerabilitiesController#new as HTML
+Filter chain halted as #<Proc:0x00007fc04615ddb8@/Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/actionpack-5.2.4.4/lib/action_controller/metal/http_authentication.rb:72> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities/new" for ::1 at 2021-04-10 23:19:53 -0400
+Processing by SecurityAndPrivacyVulnerabilitiesController#new as HTML
+  Rendering security_and_privacy_vulnerabilities/new.html.erb within layouts/application
+  Rendered security_and_privacy_vulnerabilities/_form.html.erb (20.3ms)
+  Rendered security_and_privacy_vulnerabilities/new.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 77ms (Views: 58.4ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/products" for ::1 at 2021-04-10 23:19:58 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 43ms (Views: 40.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/new" for ::1 at 2021-04-10 23:20:00 -0400
+Processing by ProductsController#new as HTML
+Filter chain halted as #<Proc:0x00007fc04615ddb8@/Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/actionpack-5.2.4.4/lib/action_controller/metal/http_authentication.rb:72> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for ::1 at 2021-04-10 23:20:00 -0400
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (4.2ms)
+  Rendered products/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 61ms (Views: 45.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/products" for ::1 at 2021-04-10 23:20:38 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (2.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 51ms (Views: 47.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/manufacturers" for ::1 at 2021-04-10 23:20:40 -0400
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.3ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:22
+  Rendered manufacturers/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/manufacturers/new" for ::1 at 2021-04-10 23:20:42 -0400
+Processing by ManufacturersController#new as HTML
+Filter chain halted as #<Proc:0x00007fc04615ddb8@/Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/actionpack-5.2.4.4/lib/action_controller/metal/http_authentication.rb:72> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/manufacturers/new" for ::1 at 2021-04-10 23:20:42 -0400
+Processing by ManufacturersController#new as HTML
+  Rendering manufacturers/new.html.erb within layouts/application
+  Rendered manufacturers/_form.html.erb (7.2ms)
+  Rendered manufacturers/new.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 84ms (Views: 59.6ms | ActiveRecord: 5.1ms)
+
+
+Started POST "/manufacturers" for ::1 at 2021-04-10 23:21:10 -0400
+Processing by ManufacturersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2vEiXRRiHxJLpNMGRTzIkWm0VmxyWGCdHKMG9bgoPjEbSwBEtITvBVtEcQwxJC2V2B/qa8FkEcetldifBzl0Qg==", "manufacturer"=>{"name"=>"RoboLink", "street_address"=>"77 Caroll str.", "city"=>"New York", "state"=>"NY", "postal_code"=>"45684", "country_or_region"=>"US", "phone"=>"1243567894", "email"=>"robolink@gmail.com"}, "commit"=>"Create Manufacturer"}
+Filter chain halted as #<Proc:0x00007fc04615ddb8@/Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/actionpack-5.2.4.4/lib/action_controller/metal/http_authentication.rb:72> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/manufacturers" for ::1 at 2021-04-10 23:21:10 -0400
+Processing by ManufacturersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2vEiXRRiHxJLpNMGRTzIkWm0VmxyWGCdHKMG9bgoPjEbSwBEtITvBVtEcQwxJC2V2B/qa8FkEcetldifBzl0Qg==", "manufacturer"=>{"name"=>"RoboLink", "street_address"=>"77 Caroll str.", "city"=>"New York", "state"=>"NY", "postal_code"=>"45684", "country_or_region"=>"US", "phone"=>"1243567894", "email"=>"robolink@gmail.com"}, "commit"=>"Create Manufacturer"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/manufacturers_controller.rb:30
+  [1m[36mManufacturer Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "manufacturers" WHERE "manufacturers"."name" = $1 LIMIT $2[0m  [["name", "RoboLink"], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:30
+  [1m[36mManufacturer Create (1.3ms)[0m  [1m[32mINSERT INTO "manufacturers" ("name", "street_address", "city", "state", "postal_code", "country_or_region", "phone", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "RoboLink"], ["street_address", "77 Caroll str."], ["city", "New York"], ["state", "NY"], ["postal_code", 45684], ["country_or_region", "US"], ["phone", 1243567894], ["email", "robolink@gmail.com"], ["created_at", "2021-04-11 03:21:10.200534"], ["updated_at", "2021-04-11 03:21:10.200534"]]
+  ↳ app/controllers/manufacturers_controller.rb:30
+  [1m[35m (10.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/manufacturers_controller.rb:30
+Redirected to http://localhost:3000/manufacturers/1
+Completed 302 Found in 22ms (ActiveRecord: 12.3ms)
+
+
+Started GET "/manufacturers/1" for ::1 at 2021-04-10 23:21:10 -0400
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mManufacturer Load (0.4ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."manufacturer_id" = $1[0m  [["manufacturer_id", 1]]
+  ↳ app/views/manufacturers/show.html.erb:40
+  Rendered manufacturers/show.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 44ms (Views: 38.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/manufacturers" for ::1 at 2021-04-10 23:21:13 -0400
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.8ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:22
+  Rendered manufacturers/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 48ms (Views: 45.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/home/index" for ::1 at 2021-04-10 23:21:30 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2021-04-10 23:21:31 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 40ms (Views: 37.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/manufacturers" for ::1 at 2021-04-10 23:21:32 -0400
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.6ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:22
+  Rendered manufacturers/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 37ms (Views: 34.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home/index" for ::1 at 2021-04-10 23:21:34 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2021-04-10 23:21:37 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 66ms (Views: 64.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products/new" for ::1 at 2021-04-10 23:21:42 -0400
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (5.3ms)
+  Rendered products/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 47ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for ::1 at 2021-04-10 23:22:08 -0400
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g3gD0nVrH3OX+m2KEjJdx/J0jnzQFM69YEfQoRQtGia4KZUqOOKTiWcjtD5iBMBh53isrZt2tDr/QD1akUpudQ==", "product"=>{"name"=>"Zumi", "barcode"=>"7363647639", "manufacturer_id"=>"1"}, "commit"=>"Create Product"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:33
+  [1m[36mProduct Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."name" = $1 LIMIT $2[0m  [["name", "Zumi"], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:33
+  [1m[36mManufacturer Load (0.5ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:33
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:33
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 1.6ms)
+
+
+  
+ActiveModel::RangeError (7363647639 is out of range for ActiveModel::Type::Integer with limit 4 bytes):
+  
+app/controllers/products_controller.rb:33:in `block in create'
+app/controllers/products_controller.rb:32:in `create'
+Started POST "/products" for ::1 at 2021-04-10 23:22:28 -0400
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y9jjTuYQT1nhuzyBeiG6IDqL9Z3nogRlHXxYBlDEnpdzzR0QSytPHQZ17E9Xp8/nHjs3vcrakgs/IjbSb94Qbw==", "product"=>{"name"=>"Zumi", "barcode"=>"7363647639", "manufacturer_id"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:33
+  [1m[36mProduct Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."name" = $1 LIMIT $2[0m  [["name", "Zumi"], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:33
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:33
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (5.3ms)
+  Rendered products/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 73ms (Views: 64.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities" for ::1 at 2021-04-10 23:22:58 -0400
+Processing by SecurityAndPrivacyVulnerabilitiesController#index as HTML
+  Rendering security_and_privacy_vulnerabilities/index.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.6ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities"[0m
+  ↳ app/views/security_and_privacy_vulnerabilities/index.html.erb:19
+  Rendered security_and_privacy_vulnerabilities/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 37ms (Views: 35.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities/new" for ::1 at 2021-04-10 23:23:00 -0400
+Processing by SecurityAndPrivacyVulnerabilitiesController#new as HTML
+  Rendering security_and_privacy_vulnerabilities/new.html.erb within layouts/application
+  Rendered security_and_privacy_vulnerabilities/_form.html.erb (4.6ms)
+  Rendered security_and_privacy_vulnerabilities/new.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 48ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/security_and_privacy_vulnerabilities" for ::1 at 2021-04-10 23:23:27 -0400
+Processing by SecurityAndPrivacyVulnerabilitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"coL3RnLCX916SXgQ8RJmH9p09ZHzpnEAJfMTCuidR4PiSQI36BTWQBUE+N9X/2KybVFWZv3f/vjVFZyz/XPx4Q==", "security_and_privacy_vulnerability"=>{"product_id"=>"", "cve_id"=>"CVE-2015-3429", "severity"=>"Moderate", "description"=>"", "advisories"=>""}, "commit"=>"Create Security and privacy vulnerability"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/security_and_privacy_vulnerabilities_controller.rb:30
+  [1m[36mSecurityAndPrivacyVulnerability Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "security_and_privacy_vulnerabilities" WHERE "security_and_privacy_vulnerabilities"."cve_id" = $1 LIMIT $2[0m  [["cve_id", "CVE-2015-3429"], ["LIMIT", 1]]
+  ↳ app/controllers/security_and_privacy_vulnerabilities_controller.rb:30
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/security_and_privacy_vulnerabilities_controller.rb:30
+  Rendering security_and_privacy_vulnerabilities/new.html.erb within layouts/application
+  Rendered security_and_privacy_vulnerabilities/_form.html.erb (5.9ms)
+  Rendered security_and_privacy_vulnerabilities/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 52ms (Views: 40.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products" for ::1 at 2021-04-10 23:24:13 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 44ms (Views: 41.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products?name=zumi&manufacturer=&barcode=" for ::1 at 2021-04-10 23:24:20 -0400
+Processing by ProductsController#index as HTML
+  Parameters: {"name"=>"zumi", "manufacturer"=>"", "barcode"=>""}
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (6.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE (name like '%zumi%')[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 42ms (Views: 34.1ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/products/new" for ::1 at 2021-04-10 23:24:21 -0400
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (3.8ms)
+  Rendered products/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 47ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for ::1 at 2021-04-10 23:24:33 -0400
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"znzR4+Uv7aS9rBdxdORu2huxSYTbtpZA0iquUL6qFB31LUcbqKZhXk11zsUE0vN8Dr1rVZDU7MdNLUOrO81gTg==", "product"=>{"name"=>"", "barcode"=>"", "manufacturer_id"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:33
+  [1m[36mProduct Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:33
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:33
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (5.7ms)
+  Rendered products/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 68ms (Views: 59.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/manufacturers" for ::1 at 2021-04-10 23:27:01 -0400
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.4ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:22
+  Rendered manufacturers/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 40ms (Views: 37.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/manufacturers/1" for ::1 at 2021-04-10 23:27:05 -0400
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mManufacturer Load (0.4ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."manufacturer_id" = $1[0m  [["manufacturer_id", 1]]
+  ↳ app/views/manufacturers/show.html.erb:40
+  Rendered manufacturers/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 39ms (Views: 35.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/manufacturers" for ::1 at 2021-04-10 23:27:07 -0400
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.4ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:22
+  Rendered manufacturers/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 41ms (Views: 38.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for ::1 at 2021-04-10 23:27:12 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 34ms (Views: 31.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/new" for ::1 at 2021-04-10 23:27:15 -0400
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (2.6ms)
+  Rendered products/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 40ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/new" for ::1 at 2021-04-10 23:28:15 -0400
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (2.2ms)
+  Rendered products/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 60ms (Views: 44.6ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/products/new" for ::1 at 2021-04-10 23:28:46 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (12.5ms)
+  Rendered products/new.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 372ms (Views: 351.2ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/products/new" for ::1 at 2021-04-10 23:31:10 -0400
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (4.3ms)
+  Rendered products/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2021-04-10 23:31:17 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 43ms (Views: 40.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/products/new" for ::1 at 2021-04-10 23:31:23 -0400
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (6.0ms)
+  Rendered products/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 53ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2021-04-10 23:32:56 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 42ms (Views: 39.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities" for ::1 at 2021-04-10 23:33:00 -0400
+Processing by SecurityAndPrivacyVulnerabilitiesController#index as HTML
+  Rendering security_and_privacy_vulnerabilities/index.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.7ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities"[0m
+  ↳ app/views/security_and_privacy_vulnerabilities/index.html.erb:19
+  Rendered security_and_privacy_vulnerabilities/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 45ms (Views: 36.6ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities/new" for ::1 at 2021-04-10 23:33:01 -0400
+Processing by SecurityAndPrivacyVulnerabilitiesController#new as HTML
+  Rendering security_and_privacy_vulnerabilities/new.html.erb within layouts/application
+  Rendered security_and_privacy_vulnerabilities/_form.html.erb (6.7ms)
+  Rendered security_and_privacy_vulnerabilities/new.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 89ms (Views: 45.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities/new" for ::1 at 2021-04-10 23:34:05 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/oksanapiven/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by SecurityAndPrivacyVulnerabilitiesController#new as HTML
+  Rendering security_and_privacy_vulnerabilities/new.html.erb within layouts/application
+  Rendered security_and_privacy_vulnerabilities/_form.html.erb (13.6ms)
+  Rendered security_and_privacy_vulnerabilities/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 357ms (Views: 335.6ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/manufacturers" for ::1 at 2021-04-10 23:35:18 -0400
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (1.1ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:22
+  Rendered manufacturers/index.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 67ms (Views: 52.3ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/manufacturers/1" for ::1 at 2021-04-10 23:35:22 -0400
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mManufacturer Load (0.4ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."manufacturer_id" = $1[0m  [["manufacturer_id", 1]]
+  ↳ app/views/manufacturers/show.html.erb:40
+  Rendered manufacturers/show.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 67ms (Views: 59.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/manufacturers/1/edit" for ::1 at 2021-04-10 23:35:27 -0400
+Processing by ManufacturersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mManufacturer Load (0.4ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67
+  Rendering manufacturers/edit.html.erb within layouts/application
+  Rendered manufacturers/_form.html.erb (6.3ms)
+  Rendered manufacturers/edit.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 49ms (Views: 44.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/manufacturers" for ::1 at 2021-04-10 23:35:30 -0400
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.7ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:22
+  Rendered manufacturers/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 72ms (Views: 69.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/manufacturers/1/edit" for ::1 at 2021-04-10 23:35:32 -0400
+Processing by ManufacturersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mManufacturer Load (0.4ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67
+  Rendering manufacturers/edit.html.erb within layouts/application
+  Rendered manufacturers/_form.html.erb (10.5ms)
+  Rendered manufacturers/edit.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 56ms (Views: 53.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/manufacturers" for ::1 at 2021-04-10 23:35:35 -0400
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.6ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:22
+  Rendered manufacturers/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 34ms (Views: 32.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/manufacturers/1" for ::1 at 2021-04-10 23:35:36 -0400
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mManufacturer Load (0.6ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."manufacturer_id" = $1[0m  [["manufacturer_id", 1]]
+  ↳ app/views/manufacturers/show.html.erb:40
+  Rendered manufacturers/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 49ms (Views: 45.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/manufacturers" for ::1 at 2021-04-10 23:35:42 -0400
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.7ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:22
+  Rendered manufacturers/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 42ms (Views: 40.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products" for ::1 at 2021-04-10 23:36:10 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 38ms (Views: 35.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/products/new" for ::1 at 2021-04-10 23:36:15 -0400
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (3.8ms)
+  Rendered products/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 62ms (Views: 50.0ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/products" for ::1 at 2021-04-10 23:36:50 -0400
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ySZ2jI4mk4nzqMmuByqj/JDglky2gDVhDo9ngHMlizjyd+B0w68fcwNxEBp3HD5ahey0nf3iT+aRiIp79kL/aw==", "product"=>{"name"=>"Zumi", "barcode"=>"3354558859", "manufacturer_id"=>"1"}, "commit"=>"Create Product"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:33
+  [1m[36mProduct Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."name" = $1 LIMIT $2[0m  [["name", "Zumi"], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:33
+  [1m[36mManufacturer Load (0.6ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:33
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:33
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.8ms)
+
+
+  
+ActiveModel::RangeError (3354558859 is out of range for ActiveModel::Type::Integer with limit 4 bytes):
+  
+app/controllers/products_controller.rb:33:in `block in create'
+app/controllers/products_controller.rb:32:in `create'
+Started POST "/products" for ::1 at 2021-04-10 23:37:27 -0400
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xOCENGqjZSkw9Tr6ANZVGPSMjpwkKiMbVTlWXfn5+IfU9Xpqx5hlbdc76jQtUCDf0DxMvAlStXV3ZziJxuN2fw==", "product"=>{"name"=>"Zumi", "barcode"=>"3354558859", "manufacturer_id"=>"1"}, "commit"=>"Create Product"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:33
+  [1m[36mProduct Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."name" = $1 LIMIT $2[0m  [["name", "Zumi"], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:33
+  [1m[36mManufacturer Load (0.5ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:33
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:33
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.3ms)
+
+
+  
+ActiveModel::RangeError (3354558859 is out of range for ActiveModel::Type::Integer with limit 4 bytes):
+  
+app/controllers/products_controller.rb:33:in `block in create'
+app/controllers/products_controller.rb:32:in `create'
+Started POST "/products" for ::1 at 2021-04-10 23:38:33 -0400
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xOCENGqjZSkw9Tr6ANZVGPSMjpwkKiMbVTlWXfn5+IfU9Xpqx5hlbdc76jQtUCDf0DxMvAlStXV3ZziJxuN2fw==", "product"=>{"name"=>"Zumi", "barcode"=>"1", "manufacturer_id"=>"1"}, "commit"=>"Create Product"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:33
+  [1m[36mProduct Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."name" = $1 LIMIT $2[0m  [["name", "Zumi"], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:33
+  [1m[36mManufacturer Load (0.4ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:33
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:33
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (4.1ms)
+  Rendered products/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 51ms (Views: 41.4ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/products" for ::1 at 2021-04-10 23:38:47 -0400
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7kS8aqgmrRqXpsgvXbpsj4LmVoXDIBsKJriPhIl/mB/+UUI0BR2tXnBoGOFwPBlIplaUpe5YjWQE5uFQtmUW5w==", "product"=>{"name"=>"Zumi", "barcode"=>"1234567890", "manufacturer_id"=>"1"}, "commit"=>"Create Product"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:33
+  [1m[36mProduct Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."name" = $1 LIMIT $2[0m  [["name", "Zumi"], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:33
+  [1m[36mManufacturer Load (0.3ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:33
+  [1m[36mProduct Create (1.3ms)[0m  [1m[32mINSERT INTO "products" ("name", "barcode", "manufacturer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Zumi"], ["barcode", 1234567890], ["manufacturer_id", 1], ["created_at", "2021-04-11 03:38:47.095341"], ["updated_at", "2021-04-11 03:38:47.095341"]]
+  ↳ app/controllers/products_controller.rb:33
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:33
+Redirected to http://localhost:3000/products/1
+Completed 302 Found in 15ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/products/1" for ::1 at 2021-04-10 23:38:47 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:70
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.7ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities" WHERE "security_and_privacy_vulnerabilities"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/views/products/show.html.erb:18
+  Rendered products/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 42ms (Views: 38.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/products" for ::1 at 2021-04-10 23:38:55 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 56ms (Views: 53.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/1/edit" for ::1 at 2021-04-10 23:39:05 -0400
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:70
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (3.0ms)
+  Rendered products/edit.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 46ms (Views: 38.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for ::1 at 2021-04-10 23:39:09 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 43ms (Views: 40.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/manufacturers" for ::1 at 2021-04-10 23:39:11 -0400
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.4ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:22
+  Rendered manufacturers/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 61ms (Views: 59.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/manufacturers/1" for ::1 at 2021-04-10 23:39:13 -0400
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mManufacturer Load (0.3ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."manufacturer_id" = $1[0m  [["manufacturer_id", 1]]
+  ↳ app/views/manufacturers/show.html.erb:40
+  Rendered manufacturers/show.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 49ms (Views: 45.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/manufacturers" for ::1 at 2021-04-10 23:39:44 -0400
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.4ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:22
+  Rendered manufacturers/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 40ms (Views: 38.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/manufacturers/1" for ::1 at 2021-04-10 23:39:52 -0400
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mManufacturer Load (0.5ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."manufacturer_id" = $1[0m  [["manufacturer_id", 1]]
+  ↳ app/views/manufacturers/show.html.erb:40
+  Rendered manufacturers/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 49ms (Views: 45.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/products/1/edit" for ::1 at 2021-04-10 23:40:04 -0400
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:70
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (4.0ms)
+  Rendered products/edit.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 42ms (Views: 40.2ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/products/1" for ::1 at 2021-04-10 23:40:25 -0400
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0u754iBdr3hMHTG5P/UULhiE0kJvwNmk9cR81g7F1MP47qwrlM8yeSIv2Fczx8tsMfwLFtLQvE9vfk05zspgew==", "product"=>{"name"=>"Zumi", "barcode"=>"3333333333", "manufacturer_id"=>"1"}, "commit"=>"Update Product", "id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:70
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:47
+  [1m[36mProduct Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."name" = $1 AND "products"."id" != $2 LIMIT $3[0m  [["name", "Zumi"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:47
+  [1m[36mManufacturer Load (0.4ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:47
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/products_controller.rb:47
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 2.0ms)
+
+
+  
+ActiveModel::RangeError (3333333333 is out of range for ActiveModel::Type::Integer with limit 4 bytes):
+  
+app/controllers/products_controller.rb:47:in `block in update'
+app/controllers/products_controller.rb:46:in `update'
+Started PATCH "/products/1" for ::1 at 2021-04-10 23:40:48 -0400
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2MEtMKnylg6jC/RXpi7XI9Xr2zIE8OZdSr5gWQuV9rzI1NNuBMmWSkTFJJmLqKLk8VsZEimIcDNo4A6NNI94RA==", "product"=>{"name"=>"Zumi", "barcode"=>"1111111111", "manufacturer_id"=>"1"}, "commit"=>"Update Product", "id"=>"1"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:70
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:47
+  [1m[36mProduct Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "products" WHERE "products"."name" = $1 AND "products"."id" != $2 LIMIT $3[0m  [["name", "Zumi"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:47
+  [1m[36mManufacturer Load (0.4ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:47
+  [1m[36mProduct Update (0.4ms)[0m  [1m[33mUPDATE "products" SET "barcode" = $1, "updated_at" = $2 WHERE "products"."id" = $3[0m  [["barcode", 1111111111], ["updated_at", "2021-04-11 03:40:48.239599"], ["id", 1]]
+  ↳ app/controllers/products_controller.rb:47
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:47
+Redirected to http://localhost:3000/products/1
+Completed 302 Found in 17ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/products/1" for ::1 at 2021-04-10 23:40:48 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:70
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.3ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities" WHERE "security_and_privacy_vulnerabilities"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/views/products/show.html.erb:18
+  Rendered products/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 37ms (Views: 34.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products" for ::1 at 2021-04-10 23:40:54 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 46ms (Views: 43.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products/1" for ::1 at 2021-04-10 23:40:57 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:70
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.3ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities" WHERE "security_and_privacy_vulnerabilities"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/views/products/show.html.erb:18
+  Rendered products/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 38ms (Views: 34.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/1/edit" for ::1 at 2021-04-10 23:41:05 -0400
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:70
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (5.6ms)
+  Rendered products/edit.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 52ms (Views: 49.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for ::1 at 2021-04-10 23:41:06 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 64ms (Views: 62.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/1" for ::1 at 2021-04-10 23:41:08 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:70
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.5ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities" WHERE "security_and_privacy_vulnerabilities"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/views/products/show.html.erb:18
+  Rendered products/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 48ms (Views: 44.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/products" for ::1 at 2021-04-10 23:41:14 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 37ms (Views: 34.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities" for ::1 at 2021-04-10 23:41:15 -0400
+Processing by SecurityAndPrivacyVulnerabilitiesController#index as HTML
+  Rendering security_and_privacy_vulnerabilities/index.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.5ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities"[0m
+  ↳ app/views/security_and_privacy_vulnerabilities/index.html.erb:19
+  Rendered security_and_privacy_vulnerabilities/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 39ms (Views: 37.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities/new" for ::1 at 2021-04-10 23:41:17 -0400
+Processing by SecurityAndPrivacyVulnerabilitiesController#new as HTML
+  Rendering security_and_privacy_vulnerabilities/new.html.erb within layouts/application
+  Rendered security_and_privacy_vulnerabilities/_form.html.erb (4.7ms)
+  Rendered security_and_privacy_vulnerabilities/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 44ms (Views: 42.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/security_and_privacy_vulnerabilities" for ::1 at 2021-04-10 23:41:37 -0400
+Processing by SecurityAndPrivacyVulnerabilitiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7w8Eccp+lVe9dV9LWWfoHQSEQJujWHXwf1NBi+2fdjJ/xPEAUKgcytI434T/iuyws6HjbK0h+giPtc4y+HHAUA==", "security_and_privacy_vulnerability"=>{"product_id"=>"1", "cve_id"=>"CVE-2015-3429", "severity"=>"High", "description"=>"hello", "advisories"=>"hello"}, "commit"=>"Create Security and privacy vulnerability"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/security_and_privacy_vulnerabilities_controller.rb:30
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/security_and_privacy_vulnerabilities_controller.rb:30
+  [1m[36mSecurityAndPrivacyVulnerability Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "security_and_privacy_vulnerabilities" WHERE "security_and_privacy_vulnerabilities"."cve_id" = $1 LIMIT $2[0m  [["cve_id", "CVE-2015-3429"], ["LIMIT", 1]]
+  ↳ app/controllers/security_and_privacy_vulnerabilities_controller.rb:30
+  [1m[36mSecurityAndPrivacyVulnerability Create (3.5ms)[0m  [1m[32mINSERT INTO "security_and_privacy_vulnerabilities" ("product_id", "cve_id", "severity", "description", "advisories", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["product_id", 1], ["cve_id", "CVE-2015-3429"], ["severity", "High"], ["description", "hello"], ["advisories", "hello"], ["created_at", "2021-04-11 03:41:37.725761"], ["updated_at", "2021-04-11 03:41:37.725761"]]
+  ↳ app/controllers/security_and_privacy_vulnerabilities_controller.rb:30
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/security_and_privacy_vulnerabilities_controller.rb:30
+Redirected to http://localhost:3000/security_and_privacy_vulnerabilities/1
+Completed 302 Found in 19ms (ActiveRecord: 5.4ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities/1" for ::1 at 2021-04-10 23:41:37 -0400
+Processing by SecurityAndPrivacyVulnerabilitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.4ms)[0m  [1m[34mSELECT  "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities" WHERE "security_and_privacy_vulnerabilities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/security_and_privacy_vulnerabilities_controller.rb:67
+  Rendering security_and_privacy_vulnerabilities/show.html.erb within layouts/application
+  Rendered security_and_privacy_vulnerabilities/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 37ms (Views: 32.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for ::1 at 2021-04-10 23:41:46 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 36ms (Views: 34.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/1" for ::1 at 2021-04-10 23:41:48 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:70
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.5ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities" WHERE "security_and_privacy_vulnerabilities"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/views/products/show.html.erb:18
+  Rendered products/show.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 68ms (Views: 64.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/manufacturers/1" for ::1 at 2021-04-10 23:42:03 -0400
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mManufacturer Load (0.3ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."manufacturer_id" = $1[0m  [["manufacturer_id", 1]]
+  ↳ app/views/manufacturers/show.html.erb:40
+  Rendered manufacturers/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/manufacturers" for ::1 at 2021-04-10 23:42:05 -0400
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.8ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:22
+  Rendered manufacturers/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 52ms (Views: 49.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/manufacturers/1" for ::1 at 2021-04-10 23:42:08 -0400
+Processing by ManufacturersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mManufacturer Load (0.3ms)[0m  [1m[34mSELECT  "manufacturers".* FROM "manufacturers" WHERE "manufacturers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/manufacturers_controller.rb:67
+  Rendering manufacturers/show.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."manufacturer_id" = $1[0m  [["manufacturer_id", 1]]
+  ↳ app/views/manufacturers/show.html.erb:40
+  Rendered manufacturers/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 57ms (Views: 53.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/manufacturers" for ::1 at 2021-04-10 23:42:10 -0400
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.5ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:22
+  Rendered manufacturers/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 47ms (Views: 44.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products" for ::1 at 2021-04-10 23:42:12 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 36ms (Views: 34.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/1" for ::1 at 2021-04-10 23:42:16 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:70
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (1.3ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities" WHERE "security_and_privacy_vulnerabilities"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/views/products/show.html.erb:18
+  Rendered products/show.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 45ms (Views: 40.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/products/1" for ::1 at 2021-04-10 23:42:53 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `name' for :manufacturer_id:Symbol):
+  
+app/models/product.rb:9:in `<class:Product>'
+app/models/product.rb:1:in `<main>'
+app/controllers/products_controller.rb:70:in `set_product'
+Started GET "/products/1" for ::1 at 2021-04-10 23:43:22 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:70
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.2ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities" WHERE "security_and_privacy_vulnerabilities"."product_id" = $1[0m  [["product_id", 1]]
+  ↳ app/views/products/show.html.erb:18
+  Rendered products/show.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 61ms (Views: 42.4ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/home/index" for ::1 at 2021-04-10 23:43:34 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 66ms (Views: 64.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2021-04-10 23:43:41 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 43ms (Views: 40.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home/index" for ::1 at 2021-04-10 23:43:43 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 43ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for ::1 at 2021-04-10 23:43:49 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2021-04-10 23:43:58 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 48ms (Views: 45.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home/index" for ::1 at 2021-04-10 23:49:52 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 49ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2021-04-10 23:49:53 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 59ms (Views: 43.7ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/manufacturers" for ::1 at 2021-04-10 23:49:54 -0400
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.6ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:22
+  Rendered manufacturers/index.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 54ms (Views: 42.6ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/security_and_privacy_vulnerabilities" for ::1 at 2021-04-10 23:49:55 -0400
+Processing by SecurityAndPrivacyVulnerabilitiesController#index as HTML
+  Rendering security_and_privacy_vulnerabilities/index.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.5ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities"[0m
+  ↳ app/views/security_and_privacy_vulnerabilities/index.html.erb:19
+  Rendered security_and_privacy_vulnerabilities/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 45ms (Views: 37.0ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/manufacturers" for ::1 at 2021-04-10 23:49:59 -0400
+Processing by ManufacturersController#index as HTML
+  Rendering manufacturers/index.html.erb within layouts/application
+  [1m[36mManufacturer Load (0.5ms)[0m  [1m[34mSELECT "manufacturers".* FROM "manufacturers"[0m
+  ↳ app/views/manufacturers/index.html.erb:22
+  Rendered manufacturers/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 43ms (Views: 41.1ms | ActiveRecord: 0.5ms)
+
+
