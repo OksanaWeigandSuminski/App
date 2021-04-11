@@ -45950,3 +45950,40 @@ Processing by SecurityAndPrivacyVulnerabilitiesController#index as HTML
 Completed 200 OK in 50ms (Views: 47.6ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/security_and_privacy_vulnerabilities" for ::1 at 2021-04-10 22:28:11 -0400
+Processing by SecurityAndPrivacyVulnerabilitiesController#index as HTML
+  Rendering security_and_privacy_vulnerabilities/index.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.6ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities"[0m
+  ↳ app/views/security_and_privacy_vulnerabilities/index.html.erb:19
+  Rendered security_and_privacy_vulnerabilities/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 62ms (Views: 59.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home/index" for ::1 at 2021-04-10 22:28:13 -0400
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 62ms (Views: 54.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for ::1 at 2021-04-10 22:28:14 -0400
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:39
+  Rendered products/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 35ms (Views: 28.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products/1" for ::1 at 2021-04-10 22:28:15 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:70
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mSecurityAndPrivacyVulnerability Load (0.2ms)[0m  [1m[34mSELECT "security_and_privacy_vulnerabilities".* FROM "security_and_privacy_vulnerabilities" WHERE "security_and_privacy_vulnerabilities"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/views/products/show.html.erb:18
+  Rendered products/show.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 51ms (Views: 42.0ms | ActiveRecord: 0.5ms)
+
+
